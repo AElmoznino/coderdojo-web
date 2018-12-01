@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import ButtonLink from '../../../components/Button/ButtonLink'
 import H1 from '../../../components/Typography/H1'
 import Wrap from '../../../components/Grid/GridSection'
 
@@ -15,7 +15,7 @@ type StartSectionProps = {
 const InnerWrap = styled.div`
   display: grid;
   grid-template-columns: 200px 1fr;
-  grid-column-gap: 20px;
+  grid-column-gap: ${({ theme }) => theme.sizes.medium};
 `
 
 const RightWrap = styled.div`
@@ -24,20 +24,8 @@ const RightWrap = styled.div`
   justify-content: space-between;
 `
 
-const Button = styled(Link)`
+const AlignedButton = styled(ButtonLink)`
   align-self: flex-end;
-  background-color: ${({ theme }) => theme.colors.downy};
-  border: none;
-  border-radius: 5px;
-  color: ${({ theme }) => theme.colors.white};
-  font-size: 16px;
-  padding: 10px;
-  text-decoration: none;
-
-  &:hover {
-    cursor: pointer;
-    box-shadow: 1px 1px 3px 1px #ccc;
-  }
 `
 
 const StartSection = ({ link, text, title }: StartSectionProps) => (
@@ -47,7 +35,7 @@ const StartSection = ({ link, text, title }: StartSectionProps) => (
       <img alt="placeholder alt" src="https://placeimg.com/200/200/tech" />
       <RightWrap>
         <p>{text}</p>
-        <Button to={link}>Kom igång</Button>
+        <AlignedButton to={link}>Kom igång</AlignedButton>
       </RightWrap>
     </InnerWrap>
   </Wrap>

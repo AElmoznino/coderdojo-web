@@ -14,11 +14,11 @@ exports[`components/StartSection renders StartSection 1`] = `
       <p>
         testText
       </p>
-      <Styled(Link)
+      <Styled(Styled(Link))
         to="testLink"
       >
         Kom igång
-      </Styled(Link)>
+      </Styled(Styled(Link))>
     </styled.div>
   </styled.div>
 </styled.div>

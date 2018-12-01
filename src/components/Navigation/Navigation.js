@@ -6,14 +6,14 @@ import GridColumn from '../Grid/GridColumn'
 
 const Wrap = styled(GridColumn)`
   background-color: ${({ theme }) => theme.colors.cornflowerBlue};
-  padding-top: 20px;
+  padding-top: ${({ theme }) => theme.sizes.medium};
 `
 
 const List = styled.ul`
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-  height: 50px;
+  height: ${({ theme }) => theme.sizes.large};
   left: 0;
   right: 0;
   top: 0;

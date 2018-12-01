@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react'
 import GridColumn from '../../components/Grid/GridColumn'
 import H1 from '../../components/Typography/H1'
