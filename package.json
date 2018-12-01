@@ -47,6 +47,9 @@
       "!src/setupTests.js",
       "!src/theme.js"
     ],
+    "modulePaths": [
+      "src/"
+    ],
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
