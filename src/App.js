@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
+import theme from './theme'
 
-class App extends Component {
+import Navigation from './components/Navigation/Navigation'
+import About from './routes/About/About'
+import Start from './routes/Start/Start'
+import Overview from './routes/Overview/Overview'
+
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      <ThemeProvider theme={theme}>
+        <Router>
+          <>
+            <Navigation />
+            <Route path="/" exact component={Start} />
+            <Route path="/about" component={About} />
+            <Route path="/overview/:level" component={Overview} />
+          </>
+        </Router>
+      </ThemeProvider>
+    )
   }
 }
 
-export default App;
+export default App
