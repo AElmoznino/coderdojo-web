@@ -4,7 +4,7 @@ import React from 'react'
 import styled from 'styled-components'
 import ButtonLink from '../../../components/Button/ButtonLink'
 import H1 from '../../../components/Typography/H1'
-import Wrap from '../../../components/Grid/GridSection'
+import GridSection from '../../../components/Grid/GridSection'
 
 type StartSectionProps = {
   link: string,
@@ -29,7 +29,7 @@ const AlignedButton = styled(ButtonLink)`
 `
 
 const StartSection = ({ link, text, title }: StartSectionProps) => (
-  <Wrap>
+  <GridSection>
     <H1>{title}</H1>
     <InnerWrap>
       <img alt="placeholder alt" src="https://placeimg.com/200/200/tech" />
@@ -38,7 +38,7 @@ const StartSection = ({ link, text, title }: StartSectionProps) => (
         <AlignedButton to={link}>Kom igång</AlignedButton>
       </RightWrap>
     </InnerWrap>
-  </Wrap>
+  </GridSection>
 )
 
 export default StartSection

@@ -24,7 +24,6 @@ const classes = [
 
 export const Start = () => (
   <GridColumn>
-    <H1>Välkommen till Webbskolan</H1>
     {classes.map(c => (
       <StartSection key={c.title} link={c.link} text={c.text} title={c.title} />
     ))}
