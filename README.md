@@ -9,15 +9,17 @@ A project to teach kids the basics of web development.
 ```zsh
 $ nvm use
 $ npm install
-$ npm start
+$ npm run server // in one terminal tab to start mock API
+$ npm start // in another terminal tab to start frontend
 ```
 
 ## Commands
 
 | `npm run <script>`   | Description                                                              |
 | -------------------- | ------------------------------------------------------------------------ |
-| `start`              | Serves your app at `localhost:4000`. HMR will be enabled in development. |
+| `start`              | Serves your app at `localhost:3000`. HMR will be enabled in development. |
 | `build`              | Builds a production bundle of the app                                    |
 | `test:dev`           | Run Jest in watch mode                                                   |
 | `test -- --coverage` | Run Jest and generate coverage                                           |
 | `flow`               | Run Flow type checking                                                   |
+| `server`             | Starts the mock GraphQL server at `localhost:4000`                       |

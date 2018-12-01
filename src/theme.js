@@ -16,7 +16,9 @@ export const sizes = {
   large: '50px',
 }
 
-export default {
+export const theme = {
   colors,
   sizes,
 }
+
+export default theme
