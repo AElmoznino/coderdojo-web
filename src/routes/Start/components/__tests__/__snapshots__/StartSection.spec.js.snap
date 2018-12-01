@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/StartSection renders StartSection 1`] = `
+<styled.div>
+  <styled.h1>
+    testTitle
+  </styled.h1>
+  <styled.div>
+    <img
+      alt="placeholder alt"
+      src="https://placeimg.com/200/200/tech"
+    />
+    <styled.div>
+      <p>
+        testText
+      </p>
+      <Styled(Link)
+        to="testLink"
+      >
+        Kom igång
+      </Styled(Link)>
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;

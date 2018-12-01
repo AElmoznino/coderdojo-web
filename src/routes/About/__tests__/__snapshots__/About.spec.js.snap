@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/About renders About 1`] = `
+<styled.div>
+  <styled.h1>
+    Om CoderDojo Webbskolan
+  </styled.h1>
+  <p>
+    Webbskolan är ett projekt för att lära barn och ungdomar att programmera för webben. Här finns ett urval av övningar i HTML, CSS och Javascript. Tanken är att man ska kunna jobba helt självgående.
+  </p>
+</styled.div>
+`;

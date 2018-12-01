@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Navigation renders Navigation 1`] = `
+<Styled(styled.div)>
+  <styled.ul>
+    <li>
+      <Link
+        replace={false}
+        to="/"
+      >
+        Start
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/about"
+      >
+        Om
+      </Link>
+    </li>
+  </styled.ul>
+</Styled(styled.div)>
+`;
