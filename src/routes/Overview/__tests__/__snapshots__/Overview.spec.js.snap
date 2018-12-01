@@ -2,62 +2,160 @@
 
 exports[`components/Overview renders Overview 1`] = `
 <styled.div>
-  <styled.div>
+  <div
+    className="sc-bdVaJa cBlAJt"
+  >
     <styled.div>
-      <styled.h1>
-        Översikt av 
-        Nybörjare
-      </styled.h1>
-      <p>
-        Har du aldrig kodat förrut? Då börjar du här och får en introduktion till hur man strukturerar upp hemsidor med HTML och snyggar till dem med CSS.
-      </p>
-      <styled.div>
-        <OverviewLesson
-          image={
-            Object {
-              "alt": "HTML för nybörjare, del 1",
-              "url": "https://placeimg.com/180/180/tech",
-            }
-          }
-          key="1"
-          lessonNumber={1}
-          text="Här får du lära dig grunderna i HTML"
-        />
-        <OverviewLesson
-          image={
-            Object {
-              "alt": "HTML för nybörjare, del 2",
-              "url": "https://placeimg.com/180/180/tech",
-            }
-          }
-          key="2"
-          lessonNumber={2}
-          text="Här får du lära dig mer om HTML"
-        />
-        <OverviewLesson
-          image={
-            Object {
-              "alt": "CSS för nybörjare",
-              "url": "https://placeimg.com/180/180/tech",
-            }
-          }
-          key="3"
-          lessonNumber={3}
-          text="Här får du lära dig grunderna i CSS"
-        />
-        <OverviewLesson
-          image={
-            Object {
-              "alt": "CSS för nybörjare",
-              "url": "https://placeimg.com/180/180/tech",
-            }
-          }
-          key="4"
-          lessonNumber={4}
-          text="Här får du lära dig mer om CSS"
-        />
-      </styled.div>
+      <div
+        className="sc-bwzfXH fNjHwP"
+      >
+        <styled.h1>
+          <h1
+            className="sc-htpNat kpiFDp"
+          >
+            Översikt av 
+            Nybörjare
+          </h1>
+        </styled.h1>
+        <p>
+          Har du aldrig kodat förrut? Då börjar du här och får en introduktion till hur man strukturerar upp hemsidor med HTML och snyggar till dem med CSS.
+        </p>
+        <styled.div>
+          <div
+            className="sc-bZQynM ioYiDE"
+          >
+            <styled.div>
+              <div
+                className="sc-EHOje irzfJm"
+              >
+                <styled.h4>
+                  <h4
+                    className="sc-ifAKCX dhEZNh"
+                  >
+                    Lektion 
+                    1
+                  </h4>
+                </styled.h4>
+                <img
+                  alt="HTML för nybörjare, del 1"
+                  src="https://placeimg.com/180/180/tech"
+                />
+                <p>
+                  Här får du lära dig grunderna i HTML
+                </p>
+                <Styled(Link)
+                  to="/lesson/1"
+                >
+                  <a
+                    className="sc-bxivhb cVfQen"
+                    href="/lesson/1"
+                    onClick={[Function]}
+                  >
+                    Kom igång
+                  </a>
+                </Styled(Link)>
+              </div>
+            </styled.div>
+            <styled.div>
+              <div
+                className="sc-EHOje irzfJm"
+              >
+                <styled.h4>
+                  <h4
+                    className="sc-ifAKCX dhEZNh"
+                  >
+                    Lektion 
+                    2
+                  </h4>
+                </styled.h4>
+                <img
+                  alt="HTML för nybörjare, del 2"
+                  src="https://placeimg.com/180/180/tech"
+                />
+                <p>
+                  Här får du lära dig mer om HTML
+                </p>
+                <Styled(Link)
+                  to="/lesson/2"
+                >
+                  <a
+                    className="sc-bxivhb cVfQen"
+                    href="/lesson/2"
+                    onClick={[Function]}
+                  >
+                    Kom igång
+                  </a>
+                </Styled(Link)>
+              </div>
+            </styled.div>
+            <styled.div>
+              <div
+                className="sc-EHOje irzfJm"
+              >
+                <styled.h4>
+                  <h4
+                    className="sc-ifAKCX dhEZNh"
+                  >
+                    Lektion 
+                    3
+                  </h4>
+                </styled.h4>
+                <img
+                  alt="CSS för nybörjare"
+                  src="https://placeimg.com/180/180/tech"
+                />
+                <p>
+                  Här får du lära dig grunderna i CSS
+                </p>
+                <Styled(Link)
+                  to="/lesson/3"
+                >
+                  <a
+                    className="sc-bxivhb cVfQen"
+                    href="/lesson/3"
+                    onClick={[Function]}
+                  >
+                    Kom igång
+                  </a>
+                </Styled(Link)>
+              </div>
+            </styled.div>
+            <styled.div>
+              <div
+                className="sc-EHOje irzfJm"
+              >
+                <styled.h4>
+                  <h4
+                    className="sc-ifAKCX dhEZNh"
+                  >
+                    Lektion 
+                    4
+                  </h4>
+                </styled.h4>
+                <img
+                  alt="CSS för nybörjare"
+                  src="https://placeimg.com/180/180/tech"
+                />
+                <p>
+                  Här får du lära dig mer om CSS
+                </p>
+                <Styled(Link)
+                  to="/lesson/4"
+                >
+                  <a
+                    className="sc-bxivhb cVfQen"
+                    href="/lesson/4"
+                    onClick={[Function]}
+                  >
+                    Kom igång
+                  </a>
+                </Styled(Link)>
+              </div>
+            </styled.div>
+          </div>
+        </styled.div>
+      </div>
     </styled.div>
-  </styled.div>
+  </div>
 </styled.div>
 `;

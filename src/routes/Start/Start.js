@@ -1,33 +1,42 @@
 // @flow
 
 import React from 'react'
-import GridColumn from '../../components/Grid/GridColumn'
-import H1 from '../../components/Typography/H1'
+import GridColumn from 'components/Grid/GridColumn'
 import StartSection from './components/StartSection'
+import { Query } from 'react-apollo'
+import gql from 'graphql-tag'
 
-const classes = [
+const GET_LEVELS = gql`
   {
-    link: '/overview/nybörjare',
-    title: 'Nybörjare',
-    text: `Har du aldrig kodat förrut? Då börjar du här och får en introduktion
-          till hur man strukturerar upp hemsidor med HTML och snyggar till dem
-          med CSS.`,
-  },
-  {
-    link: '/overview/fortsättning',
-    title: 'Fortsättning',
-    text: `Har du redan prövat lite skriven programmering (dvs inte code.org eller Scratch)
-    så är det här du fortsätter. Du får pröva på Testdriven utveckling och att ändra dina
-    hemsidor med JavaScript`,
-  },
-]
+    levels {
+      link
+      title
+      text
+    }
+  }
+`
 
 export const Start = () => (
-  <GridColumn>
-    {classes.map(c => (
-      <StartSection key={c.title} link={c.link} text={c.text} title={c.title} />
-    ))}
-  </GridColumn>
+  <Query query={GET_LEVELS}>
+    {({ data, error, loading }) => {
+      if (loading) return <p>Loading...</p>
+      if (error) return <p>Error :(</p>
+      if (!data) return null
+
+      return (
+        <GridColumn>
+          {data.levels.map(level => (
+            <StartSection
+              key={level.title}
+              link={level.link}
+              text={level.text}
+              title={level.title}
+            />
+          ))}
+        </GridColumn>
+      )
+    }}
+  </Query>
 )
 
 export default Start

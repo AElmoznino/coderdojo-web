@@ -2,24 +2,99 @@
 
 exports[`components/Start renders Start 1`] = `
 <styled.div>
-  <styled.h1>
-    Välkommen till Webbskolan
-  </styled.h1>
-  <StartSection
-    key="Nybörjare"
-    link="/overview/nybörjare"
-    text="Har du aldrig kodat förrut? Då börjar du här och får en introduktion
+  <div
+    className="sc-bdVaJa cBlAJt"
+  >
+    <styled.div>
+      <div
+        className="sc-bxivhb jkRVtN"
+      >
+        <styled.h1>
+          <h1
+            className="sc-htpNat kpiFDp"
+          >
+            Nybörjare
+          </h1>
+        </styled.h1>
+        <styled.div>
+          <div
+            className="sc-ifAKCX eEDyMQ"
+          >
+            <img
+              alt="placeholder alt"
+              src="https://placeimg.com/200/200/tech"
+            />
+            <styled.div>
+              <div
+                className="sc-EHOje loaWLG"
+              >
+                <p>
+                  Har du aldrig kodat förrut? Då börjar du här och får en introduktion
           till hur man strukturerar upp hemsidor med HTML och snyggar till dem
-          med CSS."
-    title="Nybörjare"
-  />
-  <StartSection
-    key="Fortsättning"
-    link="/overview/fortsättning"
-    text="Har du redan prövat lite skriven programmering (dvs inte code.org eller Scratch)
+          med CSS.
+                </p>
+                <Styled(Styled(Link))
+                  to="/overview/nybörjare"
+                >
+                  <a
+                    className="sc-bwzfXH sc-bZQynM eJlLuS"
+                    href="/overview/nybörjare"
+                    onClick={[Function]}
+                  >
+                    Kom igång
+                  </a>
+                </Styled(Styled(Link))>
+              </div>
+            </styled.div>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+    <styled.div>
+      <div
+        className="sc-bxivhb jkRVtN"
+      >
+        <styled.h1>
+          <h1
+            className="sc-htpNat kpiFDp"
+          >
+            Fortsättning
+          </h1>
+        </styled.h1>
+        <styled.div>
+          <div
+            className="sc-ifAKCX eEDyMQ"
+          >
+            <img
+              alt="placeholder alt"
+              src="https://placeimg.com/200/200/tech"
+            />
+            <styled.div>
+              <div
+                className="sc-EHOje loaWLG"
+              >
+                <p>
+                  Har du redan prövat lite skriven programmering (dvs inte code.org eller Scratch)
     så är det här du fortsätter. Du får pröva på Testdriven utveckling och att ändra dina
-    hemsidor med JavaScript"
-    title="Fortsättning"
-  />
+    hemsidor med JavaScript
+                </p>
+                <Styled(Styled(Link))
+                  to="/overview/fortsättning"
+                >
+                  <a
+                    className="sc-bwzfXH sc-bZQynM eJlLuS"
+                    href="/overview/fortsättning"
+                    onClick={[Function]}
+                  >
+                    Kom igång
+                  </a>
+                </Styled(Styled(Link))>
+              </div>
+            </styled.div>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </div>
 </styled.div>
 `;
