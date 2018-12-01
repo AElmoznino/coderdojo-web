@@ -39,6 +39,14 @@
     "not op_mini all"
   ],
   "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!<rootDir>/node_modules/",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!src/setupTests.js",
+      "!src/theme.js"
+    ],
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
