@@ -3,8 +3,61 @@
 exports[`components/Overview renders Overview 1`] = `
 <styled.div>
   <styled.div>
-    Översikt av 
-    Nybörjare
+    <styled.div>
+      <styled.h1>
+        Översikt av 
+        Nybörjare
+      </styled.h1>
+      <p>
+        Har du aldrig kodat förrut? Då börjar du här och får en introduktion till hur man strukturerar upp hemsidor med HTML och snyggar till dem med CSS.
+      </p>
+      <styled.div>
+        <OverviewLesson
+          image={
+            Object {
+              "alt": "HTML för nybörjare, del 1",
+              "url": "https://placeimg.com/180/180/tech",
+            }
+          }
+          key="1"
+          lessonNumber={1}
+          text="Här får du lära dig grunderna i HTML"
+        />
+        <OverviewLesson
+          image={
+            Object {
+              "alt": "HTML för nybörjare, del 2",
+              "url": "https://placeimg.com/180/180/tech",
+            }
+          }
+          key="2"
+          lessonNumber={2}
+          text="Här får du lära dig mer om HTML"
+        />
+        <OverviewLesson
+          image={
+            Object {
+              "alt": "CSS för nybörjare",
+              "url": "https://placeimg.com/180/180/tech",
+            }
+          }
+          key="3"
+          lessonNumber={3}
+          text="Här får du lära dig grunderna i CSS"
+        />
+        <OverviewLesson
+          image={
+            Object {
+              "alt": "CSS för nybörjare",
+              "url": "https://placeimg.com/180/180/tech",
+            }
+          }
+          key="4"
+          lessonNumber={4}
+          text="Här får du lära dig mer om CSS"
+        />
+      </styled.div>
+    </styled.div>
   </styled.div>
 </styled.div>
 `;

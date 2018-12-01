@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/OverviewLesson renders OverviewLesson 1`] = `
+<styled.div>
+  <styled.h4>
+    Lektion 
+    1
+  </styled.h4>
+  <img
+    alt="testAlt"
+    src="testUrl"
+  />
+  <p>
+    testText
+  </p>
+  <Styled(Link)
+    to="/lesson/1"
+  >
+    Kom igång
+  </Styled(Link)>
+</styled.div>
+`;
