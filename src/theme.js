@@ -7,6 +7,16 @@ export const colors = {
   white: 'rgb(255, 255, 255)', // #fff
 }
 
+export const sizes = {
+  small: '5px',
+  third: '10px',
+  half: '15px',
+  medium: '20px',
+  base: '30px',
+  large: '50px',
+}
+
 export default {
   colors,
+  sizes,
 }

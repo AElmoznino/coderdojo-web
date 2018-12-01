@@ -5,24 +5,22 @@ import theme from './theme'
 
 import Navigation from './components/Navigation/Navigation'
 import About from './routes/About/About'
-import Start from './routes/Start/Start'
+import Lesson from './routes/Lesson/Lesson'
 import Overview from './routes/Overview/Overview'
+import Start from './routes/Start/Start'
 
-class App extends React.Component {
-  render() {
-    return (
-      <ThemeProvider theme={theme}>
-        <Router>
-          <>
-            <Navigation />
-            <Route path="/" exact component={Start} />
-            <Route path="/about" component={About} />
-            <Route path="/overview/:level" component={Overview} />
-          </>
-        </Router>
-      </ThemeProvider>
-    )
-  }
-}
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <Router>
+      <>
+        <Navigation />
+        <Route path="/" exact component={Start} />
+        <Route path="/about" component={About} />
+        <Route path="/overview/:level" component={Overview} />
+        <Route path="/lesson/:lessonNumber" component={Lesson} />
+      </>
+    </Router>
+  </ThemeProvider>
+)
 
 export default App
