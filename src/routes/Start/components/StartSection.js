@@ -2,9 +2,9 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import ButtonLink from '../../../components/Button/ButtonLink'
-import H1 from '../../../components/Typography/H1'
-import GridSection from '../../../components/Grid/GridSection'
+import ButtonLink from 'components/Button/ButtonLink'
+import H1 from 'components/Typography/H1'
+import GridSection from 'components/Grid/GridSection'
 
 type StartSectionProps = {
   link: string,

@@ -1,9 +1,9 @@
 // @flow
 
 import React from 'react'
-import GridColumn from '../../components/Grid/GridColumn'
-import GridSection from '../../components/Grid/GridSection'
-import H1 from '../../components/Typography/H1'
+import GridColumn from 'components/Grid/GridColumn'
+import GridSection from 'components/Grid/GridSection'
+import H1 from 'components/Typography/H1'
 
 export const About = () => (
   <GridColumn>

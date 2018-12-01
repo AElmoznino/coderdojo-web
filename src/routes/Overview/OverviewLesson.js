@@ -2,8 +2,8 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import ButtonLink from '../../components/Button/ButtonLink'
-import H4 from '../../components/Typography/H4'
+import ButtonLink from 'components/Button/ButtonLink'
+import H4 from 'components/Typography/H4'
 
 type OverviewLessonProps = {
   lessonNumber: number,
