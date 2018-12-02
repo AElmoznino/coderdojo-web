@@ -7,7 +7,7 @@ exports[`components/Start renders Start 1`] = `
   >
     <styled.div>
       <div
-        className="sc-bxivhb jkRVtN"
+        className="sc-bxivhb dosbik"
       >
         <styled.h1>
           <h1
@@ -52,7 +52,7 @@ exports[`components/Start renders Start 1`] = `
     </styled.div>
     <styled.div>
       <div
-        className="sc-bxivhb jkRVtN"
+        className="sc-bxivhb dosbik"
       >
         <styled.h1>
           <h1

@@ -5,6 +5,7 @@ export const colors = {
   naturalGray: 'rgb(139,139,138)', // #8b8b8a
   pickledBluewood: 'rgb(34, 52, 65)', // #223441
   white: 'rgb(255, 255, 255)', // #fff
+  wildSand: 'rgb(245, 245, 245)', // #F5F5F5
 }
 
 export const sizes = {

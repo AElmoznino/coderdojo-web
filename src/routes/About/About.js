@@ -14,6 +14,10 @@ export const About = () => (
         för webben. Här finns ett urval av övningar i HTML, CSS och Javascript.
         Tanken är att man ska kunna jobba helt självgående.
       </p>
+      <p>
+        Sidan är optimerad för Google Chrome och anpassad för bärbar dator då
+        det är vad barnen/ungdomarna har med sig till CoderDojo.
+      </p>
     </GridSection>
   </GridColumn>
 )
