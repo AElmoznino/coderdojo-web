@@ -22,7 +22,7 @@ describe('components/Overview', () => {
       lessons: [
         {
           __typename: 'Lesson',
-          lessonNumber: 1,
+          lessonId: 'nybörjare-1',
           image: {
             __typename: 'Image',
             alt: 'HTML för nybörjare, del 1',
@@ -33,7 +33,7 @@ describe('components/Overview', () => {
         },
         {
           __typename: 'Lesson',
-          lessonNumber: 2,
+          lessonId: 'nybörjare-2',
           image: {
             __typename: 'Image',
             alt: 'HTML för nybörjare, del 2',
@@ -44,7 +44,7 @@ describe('components/Overview', () => {
         },
         {
           __typename: 'Lesson',
-          lessonNumber: 3,
+          lessonId: 'nybörjare-3',
           image: {
             __typename: 'Image',
             alt: 'CSS för nybörjare',
@@ -55,7 +55,7 @@ describe('components/Overview', () => {
         },
         {
           __typename: 'Lesson',
-          lessonNumber: 4,
+          lessonId: 'nybörjare-4',
           image: {
             __typename: 'Image',
             alt: 'CSS för nybörjare',

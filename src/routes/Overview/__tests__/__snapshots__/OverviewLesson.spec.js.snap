@@ -14,7 +14,7 @@ exports[`components/OverviewLesson renders OverviewLesson 1`] = `
     testText
   </p>
   <Styled(Link)
-    to="/lesson/1"
+    to="/lesson/nybörjare-1"
   >
     Kom igång
   </Styled(Link)>

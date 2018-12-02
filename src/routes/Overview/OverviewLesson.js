@@ -6,11 +6,12 @@ import ButtonLink from 'components/Button/ButtonLink'
 import H4 from 'components/Typography/H4'
 
 type OverviewLessonProps = {
-  lessonNumber: number,
   image: {
     alt: string,
     url: string,
   },
+  lessonId: number,
+  lessonNumber: number,
   text: string,
 }
 
@@ -24,6 +25,7 @@ const Wrap = styled.div`
 `
 
 export const OverviewLesson = ({
+  lessonId,
   lessonNumber,
   image,
   text,
@@ -32,7 +34,7 @@ export const OverviewLesson = ({
     <H4>Lektion {lessonNumber}</H4>
     <img alt={image.alt} src={image.url} />
     <p>{text}</p>
-    <ButtonLink to={`/lesson/${lessonNumber}`}>Kom igång</ButtonLink>
+    <ButtonLink to={`/lesson/${lessonId}`}>Kom igång</ButtonLink>
   </Wrap>
 )
 

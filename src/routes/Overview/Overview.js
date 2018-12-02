@@ -23,7 +23,7 @@ const LessonsWrap = styled.div`
 const GET_LESSONS = gql`
   {
     lessons {
-      lessonNumber
+      lessonId
       image {
         alt
         url
@@ -52,8 +52,12 @@ const Overview = ({ match }: OverviewProps) => {
                 snyggar till dem med CSS.
               </p>
               <LessonsWrap>
-                {data.lessons.map(lesson => (
-                  <OverviewLesson key={lesson.lessonNumber} {...lesson} />
+                {data.lessons.map((lesson, i) => (
+                  <OverviewLesson
+                    key={lesson.lessonId}
+                    lessonNumber={i + 1}
+                    {...lesson}
+                  />
                 ))}
               </LessonsWrap>
             </GridSection>
