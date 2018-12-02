@@ -18,7 +18,7 @@ exports[`components/Start renders Start 1`] = `
         </styled.h1>
         <styled.div>
           <div
-            className="sc-EHOje bfgcJp"
+            className="sc-bZQynM gzSSXj"
           >
             <img
               alt="placeholder alt"
@@ -26,7 +26,7 @@ exports[`components/Start renders Start 1`] = `
             />
             <styled.div>
               <div
-                className="sc-bZQynM bPYJKz"
+                className="sc-gzVnrw bkJYUS"
               >
                 <p>
                   Har du aldrig kodat förrut? Då börjar du här och får en introduktion
@@ -37,7 +37,7 @@ exports[`components/Start renders Start 1`] = `
                   to="/overview/nybörjare"
                 >
                   <a
-                    className="sc-ifAKCX sc-gzVnrw hCECaf"
+                    className="sc-EHOje sc-htoDjs eWdsvx"
                     href="/overview/nybörjare"
                     onClick={[Function]}
                   >
@@ -63,7 +63,7 @@ exports[`components/Start renders Start 1`] = `
         </styled.h1>
         <styled.div>
           <div
-            className="sc-EHOje bfgcJp"
+            className="sc-bZQynM gzSSXj"
           >
             <img
               alt="placeholder alt"
@@ -71,7 +71,7 @@ exports[`components/Start renders Start 1`] = `
             />
             <styled.div>
               <div
-                className="sc-bZQynM bPYJKz"
+                className="sc-gzVnrw bkJYUS"
               >
                 <p>
                   Har du redan prövat lite skriven programmering (dvs inte code.org eller Scratch)
@@ -82,7 +82,7 @@ exports[`components/Start renders Start 1`] = `
                   to="/overview/fortsättning"
                 >
                   <a
-                    className="sc-ifAKCX sc-gzVnrw hCECaf"
+                    className="sc-EHOje sc-htoDjs eWdsvx"
                     href="/overview/fortsättning"
                     onClick={[Function]}
                   >

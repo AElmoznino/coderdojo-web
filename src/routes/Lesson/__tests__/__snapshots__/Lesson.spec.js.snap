@@ -11,7 +11,7 @@ exports[`components/Lesson renders Lesson 1`] = `
       >
         <styled.div>
           <div
-            className="sc-gzVnrw fDDiIJ"
+            className="sc-htoDjs jUiOwB"
           >
             <div>
               <styled.h1>
@@ -27,7 +27,7 @@ exports[`components/Lesson renders Lesson 1`] = `
             </div>
             <styled.div>
               <div
-                className="sc-htoDjs dhyvRm"
+                className="sc-dnqmqq dXnOWs"
               >
                 <styled.h4>
                   <h4
@@ -41,7 +41,7 @@ exports[`components/Lesson renders Lesson 1`] = `
                     key="0"
                   >
                     <li
-                      className="sc-dnqmqq lnqDFX"
+                      className="sc-iwsKbI kqXDDu"
                     >
                       strukturera upp din hemsida med HTML
                     </li>
@@ -50,7 +50,7 @@ exports[`components/Lesson renders Lesson 1`] = `
                     key="1"
                   >
                     <li
-                      className="sc-dnqmqq lnqDFX"
+                      className="sc-iwsKbI kqXDDu"
                     >
                       inspektera andra hemsidor för att se hur de är uppbyggda
                     </li>
@@ -95,7 +95,7 @@ exports[`components/Lesson renders Lesson 1`] = `
       >
         <styled.div>
           <div
-            className="sc-bZQynM jwbDwS"
+            className="sc-gzVnrw liWgEh"
           >
             <strong>
               Nästa lektion: 
@@ -105,7 +105,7 @@ exports[`components/Lesson renders Lesson 1`] = `
               to="/lesson/nybörjare-2"
             >
               <a
-                className="sc-EHOje fwWOIl"
+                className="sc-bZQynM LpvqH"
                 href="/lesson/nybörjare-2"
                 onClick={[Function]}
               >

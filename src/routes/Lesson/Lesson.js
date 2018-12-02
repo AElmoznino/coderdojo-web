@@ -11,6 +11,7 @@ import GridSection from 'components/Grid/GridSection'
 import H1 from 'components/Typography/H1'
 import H4 from 'components/Typography/H4'
 import LessonSection from './components/LessonSection'
+import LoadingIndicator from 'components/LoadingIndicator/LoadingIndicator'
 import NextLesson from './components/NextLesson'
 
 type LessonProps = {
@@ -62,7 +63,7 @@ const Objective = styled.li`
 export const Lesson = ({ match }: LessonProps) => (
   <Query query={GET_LESSON} variables={{ id: match.params.lessonId }}>
     {({ data: { lesson }, error, loading }) => {
-      if (loading) return <p>Loading...</p>
+      if (loading) return <LoadingIndicator />
       if (error) return <ErrorMessage />
       if (!lesson) return null
 

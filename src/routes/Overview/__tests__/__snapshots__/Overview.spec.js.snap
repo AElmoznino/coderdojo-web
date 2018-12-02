@@ -22,15 +22,15 @@ exports[`components/Overview renders Overview 1`] = `
         </p>
         <styled.div>
           <div
-            className="sc-gzVnrw jupEpu"
+            className="sc-htoDjs iAmKHR"
           >
             <styled.div>
               <div
-                className="sc-bZQynM itosfO"
+                className="sc-gzVnrw mXQOZ"
               >
                 <styled.h4>
                   <h4
-                    className="sc-EHOje bHBhoU"
+                    className="sc-bZQynM FsPVD"
                   >
                     Lektion 
                     1
@@ -47,7 +47,7 @@ exports[`components/Overview renders Overview 1`] = `
                   to="/lesson/nybörjare-1"
                 >
                   <a
-                    className="sc-ifAKCX jXFxGy"
+                    className="sc-EHOje fwWOIl"
                     href="/lesson/nybörjare-1"
                     onClick={[Function]}
                   >
@@ -58,11 +58,11 @@ exports[`components/Overview renders Overview 1`] = `
             </styled.div>
             <styled.div>
               <div
-                className="sc-bZQynM itosfO"
+                className="sc-gzVnrw mXQOZ"
               >
                 <styled.h4>
                   <h4
-                    className="sc-EHOje bHBhoU"
+                    className="sc-bZQynM FsPVD"
                   >
                     Lektion 
                     2
@@ -79,7 +79,7 @@ exports[`components/Overview renders Overview 1`] = `
                   to="/lesson/nybörjare-2"
                 >
                   <a
-                    className="sc-ifAKCX jXFxGy"
+                    className="sc-EHOje fwWOIl"
                     href="/lesson/nybörjare-2"
                     onClick={[Function]}
                   >
@@ -90,11 +90,11 @@ exports[`components/Overview renders Overview 1`] = `
             </styled.div>
             <styled.div>
               <div
-                className="sc-bZQynM itosfO"
+                className="sc-gzVnrw mXQOZ"
               >
                 <styled.h4>
                   <h4
-                    className="sc-EHOje bHBhoU"
+                    className="sc-bZQynM FsPVD"
                   >
                     Lektion 
                     3
@@ -111,7 +111,7 @@ exports[`components/Overview renders Overview 1`] = `
                   to="/lesson/nybörjare-3"
                 >
                   <a
-                    className="sc-ifAKCX jXFxGy"
+                    className="sc-EHOje fwWOIl"
                     href="/lesson/nybörjare-3"
                     onClick={[Function]}
                   >
@@ -122,11 +122,11 @@ exports[`components/Overview renders Overview 1`] = `
             </styled.div>
             <styled.div>
               <div
-                className="sc-bZQynM itosfO"
+                className="sc-gzVnrw mXQOZ"
               >
                 <styled.h4>
                   <h4
-                    className="sc-EHOje bHBhoU"
+                    className="sc-bZQynM FsPVD"
                   >
                     Lektion 
                     4
@@ -143,7 +143,7 @@ exports[`components/Overview renders Overview 1`] = `
                   to="/lesson/nybörjare-4"
                 >
                   <a
-                    className="sc-ifAKCX jXFxGy"
+                    className="sc-EHOje fwWOIl"
                     href="/lesson/nybörjare-4"
                     onClick={[Function]}
                   >

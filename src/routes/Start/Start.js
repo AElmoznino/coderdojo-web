@@ -1,11 +1,12 @@
 // @flow
 
 import React from 'react'
-import ErrorMessage from 'components/ErrorMessage/ErrorMessage'
-import GridColumn from 'components/Grid/GridColumn'
-import StartSection from './components/StartSection'
 import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
+import ErrorMessage from 'components/ErrorMessage/ErrorMessage'
+import GridColumn from 'components/Grid/GridColumn'
+import LoadingIndicator from 'components/LoadingIndicator/LoadingIndicator'
+import StartSection from './components/StartSection'
 
 const GET_LEVELS = gql`
   {
@@ -20,7 +21,7 @@ const GET_LEVELS = gql`
 export const Start = () => (
   <Query query={GET_LEVELS}>
     {({ data, error, loading }) => {
-      if (loading) return <p>Loading...</p>
+      if (loading) return <LoadingIndicator />
       if (error) return <ErrorMessage />
       if (!data) return null
 
