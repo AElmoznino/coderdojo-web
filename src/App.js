@@ -5,6 +5,7 @@ import theme from 'theme'
 import { ApolloProvider } from 'react-apollo'
 import ApolloClient from 'apollo-boost'
 
+import ScrollToTop from './routes/ScrollToTop'
 import Navigation from 'components/Navigation/Navigation'
 import ChromeCheck from 'components/ChromeCheck/ChromeCheck'
 import About from 'routes/About/About'
@@ -21,12 +22,14 @@ const App = () => (
     <ThemeProvider theme={theme}>
       <Router>
         <>
-          <Navigation />
-          <Route path="/" exact component={Start} />
-          <Route path="/about" component={About} />
-          <Route path="/overview/:level" component={Overview} />
-          <Route path="/lesson/:lessonId" component={Lesson} />
-          <ChromeCheck />
+          <ScrollToTop>
+            <Navigation />
+            <Route path="/" exact component={Start} />
+            <Route path="/about" component={About} />
+            <Route path="/overview/:level" component={Overview} />
+            <Route path="/lesson/:lessonId" component={Lesson} />
+            <ChromeCheck />
+          </ScrollToTop>
         </>
       </Router>
     </ThemeProvider>
