@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Lesson renders Lesson 1`] = `
+<styled.div>
+  <div
+    className="sc-bdVaJa cBlAJt"
+  >
+    <styled.div>
+      <div
+        className="sc-bwzfXH LKvyz"
+      >
+        <styled.div>
+          <div
+            className="sc-EHOje jzpqrX"
+          >
+            <div>
+              <styled.h1>
+                <h1
+                  className="sc-htpNat kpiFDp"
+                >
+                  HTML del 1
+                </h1>
+              </styled.h1>
+              <p>
+                HTML används för att strukturera upp hemsidor. Alla hemsidor är byggda med det.
+              </p>
+            </div>
+            <styled.div>
+              <div
+                className="sc-bZQynM hKXQg"
+              >
+                <styled.h4>
+                  <h4
+                    className="sc-bxivhb VKTpq"
+                  >
+                    Du kommer lära dig:
+                  </h4>
+                </styled.h4>
+                <ol>
+                  <styled.li
+                    key="0"
+                  >
+                    <li
+                      className="sc-gzVnrw doxFfe"
+                    >
+                      strukturera upp din hemsida med HTML
+                    </li>
+                  </styled.li>
+                  <styled.li
+                    key="1"
+                  >
+                    <li
+                      className="sc-gzVnrw doxFfe"
+                    >
+                      inspektera andra hemsidor för att se hur de är uppbyggda
+                    </li>
+                  </styled.li>
+                </ol>
+              </div>
+            </styled.div>
+          </div>
+        </styled.div>
+        <div
+          key="Vad är HTML"
+        >
+          <styled.h1>
+            <h1
+              className="sc-htpNat kpiFDp"
+            >
+              Vad är HTML
+            </h1>
+          </styled.h1>
+          <p>
+            HTML står för Hypertext Markup Language. Det är instruktioner för webbläsaren hur sidan ska ritas upp i din webbläsare.
+          </p>
+        </div>
+        <div
+          key="Hur skriver man HTML"
+        >
+          <styled.h1>
+            <h1
+              className="sc-htpNat kpiFDp"
+            >
+              Hur skriver man HTML
+            </h1>
+          </styled.h1>
+          <p>
+            HTML består av olika så kallade "taggar" som är förbestämda. En rubrik skrivs som &lt;h1&gt;, &lt;h2&gt; osv beroende på storlek.
+          </p>
+          <p>
+            Här kommer mer text
+          </p>
+        </div>
+      </div>
+    </styled.div>
+    <styled.div>
+      <div
+        className="sc-bwzfXH LKvyz"
+      >
+        <styled.div>
+          <div
+            className="sc-htoDjs fNQPhU"
+          >
+            <strong>
+              Nästa lektion: 
+              HTML del 2
+            </strong>
+            <Styled(Link)
+              to="/lesson/nybörjare-2"
+            >
+              <a
+                className="sc-ifAKCX jXFxGy"
+                href="/lesson/nybörjare-2"
+                onClick={[Function]}
+              >
+                Fortsätt &gt;
+              </a>
+            </Styled(Link)>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </div>
+</styled.div>
+`;

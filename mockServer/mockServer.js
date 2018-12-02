@@ -2,22 +2,49 @@ const { ApolloServer, gql } = require('apollo-server')
 
 const levels = require('./data/levels')
 const lessons = require('./data/lessons')
+const lessonsOverview = require('./data/lessonsOverview')
 
-const getLessons = () => lessons
+const getLesson = id => {
+  const foundLesson = lessons.find(lesson => lesson.lessonId === id)
+
+  return foundLesson
+}
+
+const getLessons = () => lessonsOverview
 
 const getLevels = () => levels
 
 const typeDefs = gql`
+  type Image {
+    alt: String
+    url: String
+  }
+
   type Lesson {
-    lessonNumber: Int
+    lessonId: String!
+    lessonIntro: String!
+    lessonShortFacts: String
+    lessonTitle: String!
+    level: String!
+    nextLesson: NextLesson
+    objectives: [String]
+    sections: [LessonSection]!
+  }
+
+  type LessonOverview {
+    lessonId: String
     image: Image
     text: String
     title: String
   }
 
-  type Image {
-    alt: String
-    url: String
+  type LessonSection {
+    sectionBody: String
+    sectionFinishingText: String
+    sectionImgAlt: String
+    sectionImgUrl: String
+    sectionSandbox: String
+    sectionTitle: String
   }
 
   type Level {
@@ -26,14 +53,21 @@ const typeDefs = gql`
     text: String
   }
 
+  type NextLesson {
+    lessonId: String
+    title: String
+  }
+
   type Query {
-    lessons: [Lesson]
+    lesson(id: String): Lesson
+    lessons: [LessonOverview]
     levels: [Level]
   }
 `
 
 const resolvers = {
   Query: {
+    lesson: (root, { id }) => getLesson(id),
     lessons: root => getLessons(),
     levels: root => getLevels(),
   },

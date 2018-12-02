@@ -24,7 +24,7 @@ const App = () => (
           <Route path="/" exact component={Start} />
           <Route path="/about" component={About} />
           <Route path="/overview/:level" component={Overview} />
-          <Route path="/lesson/:lessonNumber" component={Lesson} />
+          <Route path="/lesson/:lessonId" component={Lesson} />
         </>
       </Router>
     </ThemeProvider>
