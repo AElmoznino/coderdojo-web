@@ -17,6 +17,7 @@ type OverviewLessonProps = {
 
 const Wrap = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
+  box-shadow: 0 0 ${({ theme }) => theme.sizes.medium} rgba(67, 73, 89, 0.1);
   padding: ${({
     theme: {
       sizes: { medium, third },

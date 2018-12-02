@@ -5,6 +5,16 @@ exports[`components/Start renders Start 1`] = `
   <div
     className="sc-bdVaJa cBlAJt"
   >
+    <styled.h1>
+      <h1
+        className="sc-htpNat kpiFDp"
+      >
+        Välkommen till CoderDojo Webbskolan
+      </h1>
+    </styled.h1>
+    <p>
+      Här kan du lära dig koda för webben. När du är klar kommer du kunna bygga hemsidor, lösa din matteläxor med hjälp av kod, och mycket annat skoj. Webbskolan är helt gratis och du behöver inget konto.
+    </p>
     <styled.div>
       <div
         className="sc-bwzfXH LKvyz"
