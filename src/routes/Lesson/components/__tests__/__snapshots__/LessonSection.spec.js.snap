@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/LessonSection renders LessonSection 1`] = `
+<div>
+  <styled.h1>
+    Test Title
+  </styled.h1>
+  <p>
+    Test body
+  </p>
+</div>
+`;
+
+exports[`components/LessonSection renders LessonSection with image 1`] = `
+<div>
+  <styled.h1>
+    Test Title
+  </styled.h1>
+  <p>
+    Test body
+  </p>
+  <img
+    alt="Test image alt"
+    src="Test image url"
+  />
+</div>
+`;
+
+exports[`components/LessonSection renders LessonSection with sandbox and explaining text after it 1`] = `
+<div>
+  <styled.h1>
+    Test Title
+  </styled.h1>
+  <p>
+    Test body
+  </p>
+  <iframe
+    sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+    src="https://codesandbox.io/embed/some-test-sandbox"
+    style={
+      Object {
+        "height": "500px",
+        "overflow": "hidden",
+        "width": "100%",
+      }
+    }
+    title="unique"
+  />
+  <p>
+    Test text explaining the sandbox above it
+  </p>
+</div>
+`;

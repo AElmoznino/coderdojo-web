@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/NextLesson renders NextLesson when there is no next lesson 1`] = `
+<styled.div>
+  <styled.div>
+    Bra jobbat, du är färdig! Tillbaka till översiktssidan för 
+    nybörjare
+    <Styled(Link)
+      to="/overview/nybörjare"
+    >
+      Tillbaka
+    </Styled(Link)>
+  </styled.div>
+</styled.div>
+`;
+
+exports[`components/NextLesson renders NextLesson where there is a next lesson 1`] = `
+<styled.div>
+  <styled.div>
+    <strong>
+      Nästa lektion: 
+      test-title
+    </strong>
+    <Styled(Link)
+      to="/lesson/test-id"
+    >
+      Fortsätt &gt;
+    </Styled(Link)>
+  </styled.div>
+</styled.div>
+`;

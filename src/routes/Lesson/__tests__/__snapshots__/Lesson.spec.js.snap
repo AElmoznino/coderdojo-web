@@ -11,7 +11,7 @@ exports[`components/Lesson renders Lesson 1`] = `
       >
         <styled.div>
           <div
-            className="sc-EHOje jzpqrX"
+            className="sc-bZQynM enQiOT"
           >
             <div>
               <styled.h1>
@@ -27,7 +27,7 @@ exports[`components/Lesson renders Lesson 1`] = `
             </div>
             <styled.div>
               <div
-                className="sc-bZQynM hKXQg"
+                className="sc-gzVnrw hyKffw"
               >
                 <styled.h4>
                   <h4
@@ -41,7 +41,7 @@ exports[`components/Lesson renders Lesson 1`] = `
                     key="0"
                   >
                     <li
-                      className="sc-gzVnrw doxFfe"
+                      className="sc-htoDjs dcAjEj"
                     >
                       strukturera upp din hemsida med HTML
                     </li>
@@ -50,7 +50,7 @@ exports[`components/Lesson renders Lesson 1`] = `
                     key="1"
                   >
                     <li
-                      className="sc-gzVnrw doxFfe"
+                      className="sc-htoDjs dcAjEj"
                     >
                       inspektera andra hemsidor för att se hur de är uppbyggda
                     </li>
@@ -60,9 +60,7 @@ exports[`components/Lesson renders Lesson 1`] = `
             </styled.div>
           </div>
         </styled.div>
-        <div
-          key="Vad är HTML"
-        >
+        <div>
           <styled.h1>
             <h1
               className="sc-htpNat kpiFDp"
@@ -74,9 +72,7 @@ exports[`components/Lesson renders Lesson 1`] = `
             HTML står för Hypertext Markup Language. Det är instruktioner för webbläsaren hur sidan ska ritas upp i din webbläsare.
           </p>
         </div>
-        <div
-          key="Hur skriver man HTML"
-        >
+        <div>
           <styled.h1>
             <h1
               className="sc-htpNat kpiFDp"
@@ -99,7 +95,7 @@ exports[`components/Lesson renders Lesson 1`] = `
       >
         <styled.div>
           <div
-            className="sc-htoDjs fNQPhU"
+            className="sc-EHOje bGNHKX"
           >
             <strong>
               Nästa lektion: 

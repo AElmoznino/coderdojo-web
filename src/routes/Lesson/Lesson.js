@@ -3,13 +3,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import type { Match } from 'react-router-dom'
+import gql from 'graphql-tag'
+import { Query } from 'react-apollo'
 import GridColumn from 'components/Grid/GridColumn'
 import GridSection from 'components/Grid/GridSection'
 import H1 from 'components/Typography/H1'
 import H4 from 'components/Typography/H4'
-import ButtonLink from 'components/Button/ButtonLink'
-import gql from 'graphql-tag'
-import { Query } from 'react-apollo'
+import LessonSection from './components/LessonSection'
+import NextLesson from './components/NextLesson'
 
 type LessonProps = {
   match: Match,
@@ -57,12 +58,6 @@ const Objective = styled.li`
   }
 `
 
-const NextLesson = styled.div`
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-`
-
 export const Lesson = ({ match }: LessonProps) => (
   <Query query={GET_LESSON} variables={{ id: match.params.lessonId }}>
     {({ data: { lesson }, error, loading }) => {
@@ -90,50 +85,12 @@ export const Lesson = ({ match }: LessonProps) => (
               </ObjectivesBox>
             </TopWrap>
 
-            {lesson.sections.map(s => (
-              <div key={s.sectionTitle}>
-                <H1>{s.sectionTitle}</H1>
-                <p>{s.sectionBody}</p>
-                {s.sectionImgUrl && (
-                  <img alt={s.sectionImgAlt} src={s.sectionImgUrl} />
-                )}
-                {s.sectionSandbox && (
-                  <iframe
-                    src={s.sectionSandbox}
-                    style={{
-                      width: '100%',
-                      height: '500px',
-                      overflow: 'hidden',
-                    }}
-                    sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-                    title="unique"
-                  />
-                )}
-                {s.sectionFinishingText && <p>{s.sectionFinishingText}</p>}
-              </div>
+            {lesson.sections.map((s, i) => (
+              <LessonSection key={i} {...s} />
             ))}
           </GridSection>
 
-          <GridSection>
-            <NextLesson>
-              {lesson.nextLesson ? (
-                <>
-                  <strong>Nästa lektion: {lesson.nextLesson.title}</strong>
-                  <ButtonLink to={`/lesson/${lesson.nextLesson.lessonId}`}>
-                    Fortsätt &gt;
-                  </ButtonLink>
-                </>
-              ) : (
-                <>
-                  Bra jobbat, du är färdig! Tillbaka till översiktssidan för{' '}
-                  {lesson.level}
-                  <ButtonLink to={`/overview/${lesson.level}`}>
-                    Tillbaka
-                  </ButtonLink>
-                </>
-              )}
-            </NextLesson>
-          </GridSection>
+          <NextLesson level={lesson.level} nextLesson={lesson.nextLesson} />
         </GridColumn>
       )
     }}
