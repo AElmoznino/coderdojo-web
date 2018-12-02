@@ -6,6 +6,7 @@ import { ApolloProvider } from 'react-apollo'
 import ApolloClient from 'apollo-boost'
 
 import Navigation from 'components/Navigation/Navigation'
+import ChromeCheck from 'components/ChromeCheck/ChromeCheck'
 import About from 'routes/About/About'
 import Lesson from 'routes/Lesson/Lesson'
 import Overview from 'routes/Overview/Overview'
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/about" component={About} />
           <Route path="/overview/:level" component={Overview} />
           <Route path="/lesson/:lessonId" component={Lesson} />
+          <ChromeCheck />
         </>
       </Router>
     </ThemeProvider>
