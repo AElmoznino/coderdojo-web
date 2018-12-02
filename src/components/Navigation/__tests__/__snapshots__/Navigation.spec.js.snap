@@ -14,14 +14,32 @@ exports[`components/Navigation renders Navigation 1`] = `
         />
       </Link>
     </div>
-    <div>
+    <styled.div>
+      <Link
+        replace={false}
+        to="/"
+      >
+        Startsidan
+      </Link>
+      <Link
+        replace={false}
+        to="/overview/nybörjare"
+      >
+        Nybörjare
+      </Link>
+      <Link
+        replace={false}
+        to="/overview/fortsättning"
+      >
+        Fortsättning
+      </Link>
       <Link
         replace={false}
         to="/about"
       >
         Om
       </Link>
-    </div>
+    </styled.div>
   </styled.div>
 </Styled(styled.div)>
 `;

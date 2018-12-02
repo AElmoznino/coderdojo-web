@@ -30,6 +30,12 @@ const List = styled.div`
   }
 `
 
+const LinksWrap = styled.div`
+  & a:not(:last-child) {
+    margin-right: ${({ theme }) => theme.sizes.base};
+  }
+`
+
 export const Navigation = () => (
   <Wrap>
     <List>
@@ -38,9 +44,12 @@ export const Navigation = () => (
           <img alt="Webbskolan CoderDojo" src={logo} />
         </Link>
       </div>
-      <div>
+      <LinksWrap>
+        <Link to="/">Startsidan</Link>
+        <Link to="/overview/nybörjare">Nybörjare</Link>
+        <Link to="/overview/fortsättning">Fortsättning</Link>
         <Link to="/about">Om</Link>
-      </div>
+      </LinksWrap>
     </List>
   </Wrap>
 )
