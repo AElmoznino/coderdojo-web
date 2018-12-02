@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ChromeCheck renders ChromeCheck 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.h1>
+      <a
+        href="https://www.google.com/chrome/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Ladda ner Google Chrome
+      </a>
+       
+      för att få bästa upplevelse av sidan.
+    </styled.h1>
+    <styled.button
+      onClick={[Function]}
+    >
+      Visa inte igen
+    </styled.button>
+  </styled.div>
+</styled.div>
+`;
