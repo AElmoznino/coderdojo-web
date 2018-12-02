@@ -7,7 +7,7 @@ exports[`components/Start renders Start 1`] = `
   >
     <styled.div>
       <div
-        className="sc-bxivhb dosbik"
+        className="sc-bwzfXH LKvyz"
       >
         <styled.h1>
           <h1
@@ -18,7 +18,7 @@ exports[`components/Start renders Start 1`] = `
         </styled.h1>
         <styled.div>
           <div
-            className="sc-ifAKCX eEDyMQ"
+            className="sc-EHOje bfgcJp"
           >
             <img
               alt="placeholder alt"
@@ -26,7 +26,7 @@ exports[`components/Start renders Start 1`] = `
             />
             <styled.div>
               <div
-                className="sc-EHOje loaWLG"
+                className="sc-bZQynM bPYJKz"
               >
                 <p>
                   Har du aldrig kodat förrut? Då börjar du här och får en introduktion
@@ -37,7 +37,7 @@ exports[`components/Start renders Start 1`] = `
                   to="/overview/nybörjare"
                 >
                   <a
-                    className="sc-bwzfXH sc-bZQynM eJlLuS"
+                    className="sc-ifAKCX sc-gzVnrw hCECaf"
                     href="/overview/nybörjare"
                     onClick={[Function]}
                   >
@@ -52,7 +52,7 @@ exports[`components/Start renders Start 1`] = `
     </styled.div>
     <styled.div>
       <div
-        className="sc-bxivhb dosbik"
+        className="sc-bwzfXH LKvyz"
       >
         <styled.h1>
           <h1
@@ -63,7 +63,7 @@ exports[`components/Start renders Start 1`] = `
         </styled.h1>
         <styled.div>
           <div
-            className="sc-ifAKCX eEDyMQ"
+            className="sc-EHOje bfgcJp"
           >
             <img
               alt="placeholder alt"
@@ -71,7 +71,7 @@ exports[`components/Start renders Start 1`] = `
             />
             <styled.div>
               <div
-                className="sc-EHOje loaWLG"
+                className="sc-bZQynM bPYJKz"
               >
                 <p>
                   Har du redan prövat lite skriven programmering (dvs inte code.org eller Scratch)
@@ -82,7 +82,7 @@ exports[`components/Start renders Start 1`] = `
                   to="/overview/fortsättning"
                 >
                   <a
-                    className="sc-bwzfXH sc-bZQynM eJlLuS"
+                    className="sc-ifAKCX sc-gzVnrw hCECaf"
                     href="/overview/fortsättning"
                     onClick={[Function]}
                   >

@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react'
+import ErrorMessage from 'components/ErrorMessage/ErrorMessage'
 import GridColumn from 'components/Grid/GridColumn'
 import StartSection from './components/StartSection'
 import { Query } from 'react-apollo'
@@ -20,7 +21,7 @@ export const Start = () => (
   <Query query={GET_LEVELS}>
     {({ data, error, loading }) => {
       if (loading) return <p>Loading...</p>
-      if (error) return <p>Error :(</p>
+      if (error) return <ErrorMessage />
       if (!data) return null
 
       return (

@@ -2,13 +2,14 @@
 
 import React from 'react'
 import styled from 'styled-components'
+import { Query } from 'react-apollo'
+import gql from 'graphql-tag'
+import type { Match } from 'react-router-dom'
+import ErrorMessage from 'components/ErrorMessage/ErrorMessage'
 import GridColumn from 'components/Grid/GridColumn'
 import GridSection from 'components/Grid/GridSection'
 import H1 from 'components/Typography/H1'
 import OverviewLesson from './OverviewLesson'
-import type { Match } from 'react-router-dom'
-import { Query } from 'react-apollo'
-import gql from 'graphql-tag'
 
 type OverviewProps = {
   match: Match,
@@ -39,7 +40,7 @@ const Overview = ({ match }: OverviewProps) => {
     <Query query={GET_LESSONS}>
       {({ data, error, loading }) => {
         if (loading) return <p>Loading...</p>
-        if (error) return <p>Error :(</p>
+        if (error) return <ErrorMessage />
         if (!data) return null
 
         return (

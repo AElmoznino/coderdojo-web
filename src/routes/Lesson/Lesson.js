@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import type { Match } from 'react-router-dom'
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
+import ErrorMessage from 'components/ErrorMessage/ErrorMessage'
 import GridColumn from 'components/Grid/GridColumn'
 import GridSection from 'components/Grid/GridSection'
 import H1 from 'components/Typography/H1'
@@ -62,7 +63,7 @@ export const Lesson = ({ match }: LessonProps) => (
   <Query query={GET_LESSON} variables={{ id: match.params.lessonId }}>
     {({ data: { lesson }, error, loading }) => {
       if (loading) return <p>Loading...</p>
-      if (error) return <p>Error :(</p>
+      if (error) return <ErrorMessage />
       if (!lesson) return null
 
       return (

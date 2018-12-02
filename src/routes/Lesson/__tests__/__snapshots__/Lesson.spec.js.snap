@@ -11,7 +11,7 @@ exports[`components/Lesson renders Lesson 1`] = `
       >
         <styled.div>
           <div
-            className="sc-bZQynM enQiOT"
+            className="sc-gzVnrw fDDiIJ"
           >
             <div>
               <styled.h1>
@@ -27,11 +27,11 @@ exports[`components/Lesson renders Lesson 1`] = `
             </div>
             <styled.div>
               <div
-                className="sc-gzVnrw hyKffw"
+                className="sc-htoDjs dhyvRm"
               >
                 <styled.h4>
                   <h4
-                    className="sc-bxivhb VKTpq"
+                    className="sc-ifAKCX dhEZNh"
                   >
                     Du kommer lära dig:
                   </h4>
@@ -41,7 +41,7 @@ exports[`components/Lesson renders Lesson 1`] = `
                     key="0"
                   >
                     <li
-                      className="sc-htoDjs dcAjEj"
+                      className="sc-dnqmqq lnqDFX"
                     >
                       strukturera upp din hemsida med HTML
                     </li>
@@ -50,7 +50,7 @@ exports[`components/Lesson renders Lesson 1`] = `
                     key="1"
                   >
                     <li
-                      className="sc-htoDjs dcAjEj"
+                      className="sc-dnqmqq lnqDFX"
                     >
                       inspektera andra hemsidor för att se hur de är uppbyggda
                     </li>
@@ -95,7 +95,7 @@ exports[`components/Lesson renders Lesson 1`] = `
       >
         <styled.div>
           <div
-            className="sc-EHOje bGNHKX"
+            className="sc-bZQynM jwbDwS"
           >
             <strong>
               Nästa lektion: 
@@ -105,7 +105,7 @@ exports[`components/Lesson renders Lesson 1`] = `
               to="/lesson/nybörjare-2"
             >
               <a
-                className="sc-ifAKCX jXFxGy"
+                className="sc-EHOje fwWOIl"
                 href="/lesson/nybörjare-2"
                 onClick={[Function]}
               >
