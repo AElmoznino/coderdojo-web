@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 import styled from 'styled-components'
 import ButtonLink from 'components/Button/ButtonLink'
 import H1 from 'components/Typography/H1'
@@ -34,7 +35,7 @@ const StartSection = ({ link, text, title }: StartSectionProps) => (
     <InnerWrap>
       <img alt="placeholder alt" src="https://placeimg.com/200/200/tech" />
       <RightWrap>
-        <p>{text}</p>
+        <ReactMarkdown>{text}</ReactMarkdown>
         <AlignedButton to={link}>Kom igång</AlignedButton>
       </RightWrap>
     </InnerWrap>

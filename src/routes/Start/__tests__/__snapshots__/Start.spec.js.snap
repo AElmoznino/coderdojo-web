@@ -28,7 +28,9 @@ exports[`components/Start renders Start 1`] = `
               <div
                 className="sc-gzVnrw bkJYUS"
               >
-                <p>
+                <p
+                  key="paragraph-1-1"
+                >
                   Har du aldrig kodat förrut? Då börjar du här och får en introduktion
           till hur man strukturerar upp hemsidor med HTML och snyggar till dem
           med CSS.
@@ -73,7 +75,9 @@ exports[`components/Start renders Start 1`] = `
               <div
                 className="sc-gzVnrw bkJYUS"
               >
-                <p>
+                <p
+                  key="paragraph-1-1"
+                >
                   Har du redan prövat lite skriven programmering (dvs inte code.org eller Scratch)
     så är det här du fortsätter. Du får pröva på Testdriven utveckling och att ändra dina
     hemsidor med JavaScript

@@ -11,9 +11,18 @@ exports[`components/StartSection renders StartSection 1`] = `
       src="https://placeimg.com/200/200/tech"
     />
     <styled.div>
-      <p>
+      <ReactMarkdown
+        astPlugins={Array []}
+        escapeHtml={true}
+        plugins={Array []}
+        rawSourcePos={false}
+        renderers={Object {}}
+        skipHtml={false}
+        sourcePos={false}
+        transformLinkUri={[Function]}
+      >
         testText
-      </p>
+      </ReactMarkdown>
       <Styled(Styled(Link))
         to="testLink"
       >

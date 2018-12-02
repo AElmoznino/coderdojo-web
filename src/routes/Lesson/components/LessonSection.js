@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 import H1 from 'components/Typography/H1'
 
 type LessonSectionProps = {
@@ -23,7 +24,7 @@ export const LessonSection = ({
   <div>
     <H1>{sectionTitle}</H1>
 
-    <p>{sectionBody}</p>
+    <ReactMarkdown>{sectionBody}</ReactMarkdown>
 
     {sectionImgUrl && <img alt={sectionImgAlt} src={sectionImgUrl} />}
 

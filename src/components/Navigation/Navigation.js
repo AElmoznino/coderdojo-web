@@ -12,10 +12,9 @@ const Wrap = styled(GridColumn)`
   padding: ${({ theme }) => theme.sizes.medium} 0px;
 `
 
-const List = styled.ul`
+const List = styled.div`
   align-items: center;
   display: flex;
-  list-style-type: none;
   justify-content: space-between;
   left: 0;
   right: 0;
@@ -34,14 +33,14 @@ const List = styled.ul`
 export const Navigation = () => (
   <Wrap>
     <List>
-      <li>
+      <div>
         <Link to="/">
           <img alt="Webbskolan CoderDojo" src={logo} />
         </Link>
-      </li>
-      <li>
+      </div>
+      <div>
         <Link to="/about">Om</Link>
-      </li>
+      </div>
     </List>
   </Wrap>
 )

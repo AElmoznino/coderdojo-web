@@ -2,8 +2,8 @@
 
 exports[`components/Navigation renders Navigation 1`] = `
 <Styled(styled.div)>
-  <styled.ul>
-    <li>
+  <styled.div>
+    <div>
       <Link
         replace={false}
         to="/"
@@ -13,15 +13,15 @@ exports[`components/Navigation renders Navigation 1`] = `
           src="test-file-stub"
         />
       </Link>
-    </li>
-    <li>
+    </div>
+    <div>
       <Link
         replace={false}
         to="/about"
       >
         Om
       </Link>
-    </li>
-  </styled.ul>
+    </div>
+  </styled.div>
 </Styled(styled.div)>
 `;

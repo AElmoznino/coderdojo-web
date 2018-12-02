@@ -68,7 +68,9 @@ exports[`components/Lesson renders Lesson 1`] = `
               Vad är HTML
             </h1>
           </styled.h1>
-          <p>
+          <p
+            key="paragraph-1-1"
+          >
             HTML står för Hypertext Markup Language. Det är instruktioner för webbläsaren hur sidan ska ritas upp i din webbläsare.
           </p>
         </div>
@@ -80,8 +82,14 @@ exports[`components/Lesson renders Lesson 1`] = `
               Hur skriver man HTML
             </h1>
           </styled.h1>
-          <p>
-            HTML består av olika så kallade "taggar" som är förbestämda. En rubrik skrivs som &lt;h1&gt;, &lt;h2&gt; osv beroende på storlek.
+          <p
+            key="paragraph-1-1"
+          >
+            HTML består av olika så kallade "taggar" som är förbestämda. En rubrik skrivs som 
+            &lt;h1&gt;
+            , 
+            &lt;h2&gt;
+             osv beroende på storlek.
           </p>
           <p>
             Här kommer mer text
