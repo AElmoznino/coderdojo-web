@@ -3,19 +3,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import logo from './img/logo.png'
 
 import GridColumn from '../Grid/GridColumn'
 
 const Wrap = styled(GridColumn)`
   background-color: ${({ theme }) => theme.colors.cornflowerBlue};
-  padding-top: ${({ theme }) => theme.sizes.medium};
+  padding: ${({ theme }) => theme.sizes.medium} 0px;
 `
 
 const List = styled.ul`
+  align-items: center;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-  height: ${({ theme }) => theme.sizes.large};
   left: 0;
   right: 0;
   top: 0;
@@ -34,7 +35,9 @@ export const Navigation = () => (
   <Wrap>
     <List>
       <li>
-        <Link to="/">Start</Link>
+        <Link to="/">
+          <img alt="Webbskolan CoderDojo" src={logo} />
+        </Link>
       </li>
       <li>
         <Link to="/about">Om</Link>

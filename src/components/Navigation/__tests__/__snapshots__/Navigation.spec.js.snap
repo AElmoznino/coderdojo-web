@@ -8,7 +8,10 @@ exports[`components/Navigation renders Navigation 1`] = `
         replace={false}
         to="/"
       >
-        Start
+        <img
+          alt="Webbskolan CoderDojo"
+          src="test-file-stub"
+        />
       </Link>
     </li>
     <li>

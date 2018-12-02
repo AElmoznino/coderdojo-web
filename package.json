@@ -54,6 +54,9 @@
       "!src/setupTests.js",
       "!src/theme.js"
     ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|svg|)$": "<rootDir>/__mocks__/fileMock.js"
+    },
     "modulePaths": [
       "src/"
     ],
