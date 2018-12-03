@@ -14,57 +14,62 @@ describe('components/Overview', () => {
   beforeEach(() => {
     match = {
       params: {
-        level: 'Nybörjare',
+        level: 'nybörjare',
       },
     }
 
     mockedResponse = {
-      lessons: [
-        {
-          __typename: 'Lesson',
-          lessonId: 'nybörjare-1',
-          image: {
-            __typename: 'Image',
-            alt: 'HTML för nybörjare, del 1',
-            url: 'https://placeimg.com/180/180/tech',
+      overview: {
+        __typename: 'Overview',
+        description:
+          'Har du aldrig kodat förrut? Då börjar du här och får en\n                introduktion till hur man strukturerar upp hemsidor med **HTML** och\n                snyggar till dem med **CSS**.',
+        lessons: [
+          {
+            __typename: 'LessonOverview',
+            lessonId: 'nybörjare-1',
+            image: {
+              __typename: 'Image',
+              alt: 'HTML för nybörjare, del 1',
+              url: 'https://placeimg.com/180/180/tech',
+            },
+            text: 'Här får du lära dig grunderna i HTML',
+            title: 'HTML del 1',
           },
-          text: 'Här får du lära dig grunderna i HTML',
-          title: 'HTML del 1',
-        },
-        {
-          __typename: 'Lesson',
-          lessonId: 'nybörjare-2',
-          image: {
-            __typename: 'Image',
-            alt: 'HTML för nybörjare, del 2',
-            url: 'https://placeimg.com/180/180/tech',
+          {
+            __typename: 'LessonOverview',
+            lessonId: 'nybörjare-2',
+            image: {
+              __typename: 'Image',
+              alt: 'HTML för nybörjare, del 2',
+              url: 'https://placeimg.com/180/180/tech',
+            },
+            text: 'Här får du lära dig mer om HTML',
+            title: 'HTML del 2',
           },
-          text: 'Här får du lära dig mer om HTML',
-          title: 'HTML del 2',
-        },
-        {
-          __typename: 'Lesson',
-          lessonId: 'nybörjare-3',
-          image: {
-            __typename: 'Image',
-            alt: 'CSS för nybörjare',
-            url: 'https://placeimg.com/180/180/tech',
+          {
+            __typename: 'LessonOverview',
+            lessonId: 'nybörjare-3',
+            image: {
+              __typename: 'Image',
+              alt: 'CSS för nybörjare',
+              url: 'https://placeimg.com/180/180/tech',
+            },
+            text: 'Här får du lära dig grunderna i CSS',
+            title: 'CSS del 1',
           },
-          text: 'Här får du lära dig grunderna i CSS',
-          title: 'CSS del 1',
-        },
-        {
-          __typename: 'Lesson',
-          lessonId: 'nybörjare-4',
-          image: {
-            __typename: 'Image',
-            alt: 'CSS för nybörjare',
-            url: 'https://placeimg.com/180/180/tech',
+          {
+            __typename: 'LessonOverview',
+            lessonId: 'nybörjare-4',
+            image: {
+              __typename: 'Image',
+              alt: 'CSS för nybörjare',
+              url: 'https://placeimg.com/180/180/tech',
+            },
+            text: 'Här får du lära dig mer om CSS',
+            title: 'CSS del 2',
           },
-          text: 'Här får du lära dig mer om CSS',
-          title: 'CSS del 2',
-        },
-      ],
+        ],
+      },
     }
 
     component = mount(

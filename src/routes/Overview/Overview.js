@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
 import type { Match } from 'react-router-dom'
+import ReactMarkdown from 'react-markdown'
 import ErrorMessage from 'components/ErrorMessage/ErrorMessage'
 import GridColumn from 'components/Grid/GridColumn'
 import GridSection from 'components/Grid/GridSection'
@@ -22,39 +23,38 @@ const LessonsWrap = styled.div`
   grid-column-gap: ${({ theme }) => theme.sizes.medium};
 `
 
-const GET_LESSONS = gql`
-  {
-    lessons {
-      lessonId
-      image {
-        alt
-        url
+const GET_OVERVIEW = gql`
+  query getOverview($level: String) {
+    overview(level: $level) {
+      description
+      lessons {
+        lessonId
+        image {
+          alt
+          url
+        }
+        text
+        title
       }
-      text
-      title
     }
   }
 `
 
 const Overview = ({ match }: OverviewProps) => {
   return (
-    <Query query={GET_LESSONS}>
-      {({ data, error, loading }) => {
+    <Query query={GET_OVERVIEW} variables={{ level: match.params.level }}>
+      {({ data: { overview }, error, loading }) => {
         if (loading) return <LoadingIndicator />
         if (error) return <ErrorMessage />
-        if (!data) return null
+        if (!overview) return null
 
         return (
           <GridColumn>
             <GridSection>
               <H1>Översikt av {match.params.level}</H1>
-              <p>
-                Har du aldrig kodat förrut? Då börjar du här och får en
-                introduktion till hur man strukturerar upp hemsidor med HTML och
-                snyggar till dem med CSS.
-              </p>
+              <ReactMarkdown>{overview.description}</ReactMarkdown>
               <LessonsWrap>
-                {data.lessons.map((lesson, i) => (
+                {overview.lessons.map((lesson, i) => (
                   <OverviewLesson
                     key={lesson.lessonId}
                     lessonNumber={i + 1}

@@ -119,4 +119,88 @@ module.exports = [
       },
     ],
   },
+  {
+    lessonId: 'fortsättning-1',
+    lessonTitle: 'TDD del 1',
+    lessonShortFacts: null,
+    lessonIntro: `TDD är det rätta sättet att lära sig koda.`,
+    level: 'fortsättning',
+    nextLesson: {
+      lessonId: 'fortsättning-2',
+      title: 'TDD del 2',
+    },
+    objectives: ['TDD, TDD, TDD'],
+    sections: [
+      {
+        sectionBody: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+        sectionImgAlt: null,
+        sectionImgUrl: null,
+        sectionSandbox: null,
+        sectionTitle: 'Ännu mer om TDD',
+      },
+    ],
+  },
+  {
+    lessonId: 'fortsättning-2',
+    lessonTitle: 'TDD del 2',
+    lessonShortFacts: null,
+    lessonIntro: `Hur du löser dina matteläxor med JavaScript`,
+    level: 'fortsättning',
+    nextLesson: {
+      lessonId: 'fortsättning-3',
+      title: 'JavaScript del 1',
+    },
+    objectives: ['ännu mer TDD'],
+    sections: [
+      {
+        sectionBody: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+        sectionFinishingText: null,
+        sectionImgAlt: null,
+        sectionImgUrl: null,
+        sectionSandbox: null,
+        sectionTitle: 'Mer om TDD',
+      },
+    ],
+  },
+  {
+    lessonId: 'fortsättning-3',
+    lessonTitle: 'JavaScript del 1',
+    lessonShortFacts: null,
+    lessonIntro: `Dags att börja lära dig göra mer avancerade hemsidor`,
+    level: 'fortsättning',
+    nextLesson: {
+      lessonId: 'fortsättning-4',
+      title: 'JS del 2',
+    },
+    objectives: ['JS, JS, JS'],
+    sections: [
+      {
+        sectionBody: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+        sectionFinishingText: null,
+        sectionImgAlt: null,
+        sectionImgUrl: null,
+        sectionSandbox: null,
+        sectionTitle: 'Vad är JS',
+      },
+    ],
+  },
+  {
+    lessonId: 'fortsättning-4',
+    lessonTitle: 'JS del 2',
+    lessonShortFacts: null,
+    lessonIntro: `Bygg världens coolaste Pokédex med JavaScript`,
+    level: 'fortsättning',
+    nextLesson: null,
+    objectives: ['bygga ett snyggt Pokédex', 'och ännu mer...'],
+    sections: [
+      {
+        sectionBody: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+        sectionFinishingText: null,
+        sectionImgAlt: null,
+        sectionImgUrl: null,
+        sectionSandbox: null,
+        sectionTitle: 'Mer om JavaScript',
+      },
+    ],
+  },
 ]

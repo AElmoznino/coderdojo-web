@@ -14,11 +14,27 @@ exports[`components/Overview renders Overview 1`] = `
             className="sc-htpNat kpiFDp"
           >
             Översikt av 
-            Nybörjare
+            nybörjare
           </h1>
         </styled.h1>
-        <p>
-          Har du aldrig kodat förrut? Då börjar du här och får en introduktion till hur man strukturerar upp hemsidor med HTML och snyggar till dem med CSS.
+        <p
+          key="paragraph-1-1"
+        >
+          Har du aldrig kodat förrut? Då börjar du här och får en
+                introduktion till hur man strukturerar upp hemsidor med 
+          <strong
+            key="strong-2-73"
+          >
+            HTML
+          </strong>
+           och
+                snyggar till dem med 
+          <strong
+            key="strong-3-38"
+          >
+            CSS
+          </strong>
+          .
         </p>
         <styled.div>
           <div

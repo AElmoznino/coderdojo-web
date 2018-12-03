@@ -10,7 +10,11 @@ const getLesson = id => {
   return foundLesson
 }
 
-const getLessons = () => lessonsOverview
+const getOverview = level => {
+  const foundLevel = lessonsOverview.find(lesson => lesson.level === level)
+
+  return foundLevel
+}
 
 const getLevels = () => levels
 
@@ -58,18 +62,24 @@ const typeDefs = gql`
     title: String
   }
 
+  type Overview {
+    description: String!
+    level: String!
+    lessons: [LessonOverview]!
+  }
+
   type Query {
     lesson(id: String): Lesson
-    lessons: [LessonOverview]
     levels: [Level]
+    overview(level: String): Overview
   }
 `
 
 const resolvers = {
   Query: {
     lesson: (root, { id }) => getLesson(id),
-    lessons: root => getLessons(),
     levels: root => getLevels(),
+    overview: (root, { level }) => getOverview(level),
   },
 }
 
