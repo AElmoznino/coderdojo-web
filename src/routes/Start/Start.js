@@ -21,10 +21,10 @@ const GET_LEVELS = gql`
 
 export const Start = () => (
   <Query query={GET_LEVELS}>
-    {({ data, error, loading }) => {
+    {({ data: { levels }, error, loading }) => {
       if (loading) return <LoadingIndicator />
       if (error) return <ErrorMessage />
-      if (!data) return null
+      if (!levels) return null
 
       return (
         <GridColumn>
@@ -35,7 +35,7 @@ export const Start = () => (
             annat skoj. Webbskolan är helt gratis och du behöver inget konto.
           </p>
 
-          {data.levels.map(level => (
+          {levels.map(level => (
             <StartSection
               key={level.title}
               link={level.link}

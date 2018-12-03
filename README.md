@@ -25,9 +25,11 @@ $ npm start // in another terminal tab to start frontend
 
 ## TODOs:
 
-- [ ] Remove hardcoded texts on Overview-page, fetch from mock API instead
-- [ ] Add lessons and descriptions for Fortsättning overview page
-- [ ] Swap long texts for bullet points on the Start page (the ones called `text` in `StartSection.js`). Bold important words
+- [x] Remove hardcoded texts on Overview-page, fetch from mock API instead
+- [x] Add lessons and descriptions for Fortsättning overview page
+- [x] Bold important words on Start page
+- [ ] Swap long texts for bullet points on the Start page (the ones called `text` in `StartSection.js`).
+- [ ] Refactor and merge `levels.js` and `levelsOverview.js` into 1 file, return only what's needed for each query
 - [ ] Create content and sandboxes for all lessons
 - [ ] Add lazy-loading on `Lesson.js`
 - [ ] Add short quiz/test on end of each lesson, or after completing an entire section
