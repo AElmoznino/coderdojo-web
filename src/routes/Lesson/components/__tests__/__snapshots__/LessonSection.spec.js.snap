@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/LessonSection renders LessonSection 1`] = `
-<div>
+<Fragment>
   <styled.h1>
     Test Title
   </styled.h1>
@@ -17,11 +17,11 @@ exports[`components/LessonSection renders LessonSection 1`] = `
   >
     Test body
   </ReactMarkdown>
-</div>
+</Fragment>
 `;
 
 exports[`components/LessonSection renders LessonSection with image 1`] = `
-<div>
+<Fragment>
   <styled.h1>
     Test Title
   </styled.h1>
@@ -41,11 +41,11 @@ exports[`components/LessonSection renders LessonSection with image 1`] = `
     alt="Test image alt"
     src="Test image url"
   />
-</div>
+</Fragment>
 `;
 
 exports[`components/LessonSection renders LessonSection with sandbox and explaining text after it 1`] = `
-<div>
+<Fragment>
   <styled.h1>
     Test Title
   </styled.h1>
@@ -76,5 +76,5 @@ exports[`components/LessonSection renders LessonSection with sandbox and explain
   <p>
     Test text explaining the sandbox above it
   </p>
-</div>
+</Fragment>
 `;

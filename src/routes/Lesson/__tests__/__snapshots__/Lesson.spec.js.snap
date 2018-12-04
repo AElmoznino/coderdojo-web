@@ -60,28 +60,28 @@ exports[`components/Lesson renders Lesson 1`] = `
             </styled.div>
           </div>
         </styled.div>
-        <div>
+        Array [
           <styled.h1>
             <h1
               className="sc-htpNat kpiFDp"
             >
               Vad är HTML
             </h1>
-          </styled.h1>
+          </styled.h1>,
           <p
             key="paragraph-1-1"
           >
             HTML står för Hypertext Markup Language. Det är instruktioner för webbläsaren hur sidan ska ritas upp i din webbläsare.
-          </p>
-        </div>
-        <div>
+          </p>,
+        ]
+        Array [
           <styled.h1>
             <h1
               className="sc-htpNat kpiFDp"
             >
               Hur skriver man HTML
             </h1>
-          </styled.h1>
+          </styled.h1>,
           <p
             key="paragraph-1-1"
           >
@@ -90,11 +90,11 @@ exports[`components/Lesson renders Lesson 1`] = `
             , 
             &lt;h2&gt;
              osv beroende på storlek.
-          </p>
+          </p>,
           <p>
             Här kommer mer text
-          </p>
-        </div>
+          </p>,
+        ]
       </div>
     </styled.div>
     <styled.div>

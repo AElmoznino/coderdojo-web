@@ -36,12 +36,7 @@ export const Start = () => (
           </p>
 
           {levels.map(level => (
-            <StartSection
-              key={level.title}
-              link={level.link}
-              text={level.text}
-              title={level.title}
-            />
+            <StartSection key={level.title} {...level} />
           ))}
         </GridColumn>
       )

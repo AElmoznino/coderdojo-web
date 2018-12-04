@@ -21,7 +21,7 @@ export const LessonSection = ({
   sectionFinishingText,
   sectionSandbox,
 }: LessonSectionProps) => (
-  <div>
+  <>
     <H1>{sectionTitle}</H1>
 
     <ReactMarkdown>{sectionBody}</ReactMarkdown>
@@ -42,7 +42,7 @@ export const LessonSection = ({
     )}
 
     {sectionFinishingText && <p>{sectionFinishingText}</p>}
-  </div>
+  </>
 )
 
 export default LessonSection

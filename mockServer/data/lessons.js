@@ -27,7 +27,8 @@ module.exports = [
         sectionFinishingText: 'Här kommer mer text',
         sectionImgAlt: null,
         sectionImgUrl: null,
-        sectionSandbox: null, // 'https://codesandbox.io/embed/kwnvw1wvl3?module=%2Fsrc%2Fmatte.js'
+        sectionSandbox:
+          'https://codesandbox.io/embed/kwnvw1wvl3?module=%2Fsrc%2Fmatte.js',
         sectionTitle: 'Hur skriver man HTML',
       },
     ],
