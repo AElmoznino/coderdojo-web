@@ -18,14 +18,14 @@ describe('components/Start', () => {
           link: '/overview/nybörjare',
           title: 'Nybörjare',
           text:
-            'Har du aldrig kodat förrut? Då börjar du här och får en introduktion\n          till hur man strukturerar upp hemsidor med HTML och snyggar till dem\n          med CSS.',
+            'Har du inte kodat förrut? Då börjar du här. Lär dig:\n  * strukturera upp hemsidor med **HTML**\n  * snygga till din hemsida med **CSS**\n  * bygga din första hemsida, ett Pokédex',
         },
         {
           __typename: 'Level',
           link: '/overview/fortsättning',
           title: 'Fortsättning',
           text:
-            'Har du redan prövat lite skriven programmering (dvs inte code.org eller Scratch)\n    så är det här du fortsätter. Du får pröva på Testdriven utveckling och att ändra dina\n    hemsidor med JavaScript',
+            'Har du kodat lite förrut, eller är redan klar med nybörjare? \n          Då fortsätter du här och lär dig:\n  * Testdriven utveckling (**TDD**), det rätta sättet att koda på\n  * **JavaScript** (förkortas **JS**) som används för att bygga spel, avancerade hemsidor, och annat kul\n  ',
         },
       ],
     }

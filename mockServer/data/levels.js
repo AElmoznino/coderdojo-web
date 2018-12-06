@@ -2,16 +2,18 @@ module.exports = [
   {
     link: '/overview/nybörjare',
     title: 'Nybörjare',
-    text: `Har du aldrig kodat förrut? Då börjar du här och får en
-          introduktion till hur man strukturerar upp hemsidor med **HTML** och
-          snyggar till dem med **CSS**.`,
+    text: `Har du inte kodat förrut? Då börjar du här. Lär dig:
+  * strukturera upp hemsidor med **HTML**
+  * snygga till din hemsida med **CSS**
+  * bygga din första hemsida, ett Pokédex`,
   },
   {
     link: '/overview/fortsättning',
     title: 'Fortsättning',
     text: `Har du kodat lite förrut, eller är redan klar med nybörjare? 
-          Då börjar du här och får en introduktion till det rätta sättet att lära sig
-          **JavaScript** (förkortas JS), nämligen **TDD**. Med JS kan du bygga spel,
-          mer avancerade hemsidor och massa annat kul.`,
+          Då fortsätter du här och lär dig:
+  * Testdriven utveckling (**TDD**), det rätta sättet att koda på
+  * **JavaScript** (förkortas **JS**) som används för att bygga spel, avancerade hemsidor, och annat kul
+  `,
   },
 ]
