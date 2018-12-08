@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Navigation renders Navigation 1`] = `
-<Styled(styled.div)>
+<Styled(styled.div)
+  as="nav"
+>
   <styled.div>
     <div>
       <Link

@@ -27,7 +27,7 @@ export const About = () => (
         CoderDojo är en kodklubb för barn och ungdomar mellan 7 och 17 år. I
         skrivande stund (december 2018) finns det i 108 länder. Det är gratis
         att gå med och alla volontärer arbetar ideellt, eftersom vi tycker att
-        alla barn ska få chansen att upptäcka hur programmering är.
+        alla barn ska få chansen att upptäcka hur kul programmering är.
       </p>
       <p>
         Läs mer om{' '}

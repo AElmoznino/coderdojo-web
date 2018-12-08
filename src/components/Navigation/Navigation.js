@@ -37,7 +37,7 @@ const LinksWrap = styled.div`
 `
 
 export const Navigation = () => (
-  <Wrap>
+  <Wrap as="nav">
     <List>
       <div>
         <Link to="/">

@@ -10,12 +10,14 @@ module.exports = [
       title: 'HTML del 2',
     },
     objectives: [
+      'Vad HTML är och hur det ser ut',
       'strukturera upp din hemsida med HTML',
       'inspektera andra hemsidor för att se hur de är uppbyggda',
     ],
     sections: [
       {
-        sectionBody: `HTML står för Hypertext Markup Language. Det är instruktioner för webbläsaren hur sidan ska ritas upp i din webbläsare.`,
+        sectionBody: `HTML står för Hypertext Markup Language. Det är instruktioner för webbläsaren hur sidan ska ritas upp i din webbläsare. 
+        De flesta hemsidor, även denna, har rubriker, textstycken, bilder, den s.k. navigationen högst upp. HTML instruerar webbläsaren hur den ska rita upp din hemsida.`,
         sectionFinishingText: null,
         sectionImgAlt: null,
         sectionImgUrl: null,
@@ -23,13 +25,29 @@ module.exports = [
         sectionTitle: 'Vad är HTML',
       },
       {
-        sectionBody: `HTML består av olika så kallade "taggar" som är förbestämda. En rubrik skrivs som <h1>, <h2> osv beroende på storlek.`,
-        sectionFinishingText: 'Här kommer mer text',
+        sectionBody: `HTML består av olika så kallade "taggar" som är förbestämda. Rubriker skrivs som **<h1>**, **<h2>** osv beroende på storlek. 
+        Om du vill skriva en rubrik, så måste du tänka på att själva rubriken ska vara *innanför* taggarna, såhär: **<h1>En rubrik</h1>**.
+        I rutan nedan kan du se exempel på hur HTML-kod skrivs (till vänster), och hur det då kommer se ut (till höger).`,
+        sectionFinishingText: null,
         sectionImgAlt: null,
         sectionImgUrl: null,
         sectionSandbox:
-          'https://codesandbox.io/embed/kwnvw1wvl3?module=%2Fsrc%2Fmatte.js',
+          'https://codesandbox.io/embed/v3qpwx7063?fontsize=12&hidenavigation=1',
         sectionTitle: 'Hur skriver man HTML',
+      },
+      {
+        sectionBody: `I den s.k. CodeSandboxen ovan kan du ändra fritt hur du vill, och du ser direkt resultaten på högra sidan.
+        Dina uppgifter:
+
+* skriv en rubrik i valfri storlek med din favorit-Pokémons namn
+* skriv en mening eller två om varför det är din favorit
+* Googla fram en bild på din Pokémon och byt ut Raichu-bilden till din Pokémon
+        `,
+        sectionFinishingText: null,
+        sectionImgAlt: null,
+        sectionImgUrl: null,
+        sectionSandbox: null,
+        sectionTitle: 'Uppgift 1: Skriv om din favorit-Pokémon',
       },
     ],
   },
