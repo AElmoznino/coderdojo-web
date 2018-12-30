@@ -48,7 +48,7 @@ exports[`components/Start renders Start 1`] = `
                     <li>
                       strukturera upp hemsidor med 
                       <strong
-                        key="strong-2-34"
+                        key="strong-3-32"
                       >
                         HTML
                       </strong>
@@ -56,7 +56,7 @@ exports[`components/Start renders Start 1`] = `
                     <li>
                       snygga till din hemsida med 
                       <strong
-                        key="strong-3-33"
+                        key="strong-4-31"
                       >
                         CSS
                       </strong>
@@ -64,14 +64,22 @@ exports[`components/Start renders Start 1`] = `
                     <li>
                       bygga din första hemsida, ett Pokédex
                     </li>
+                    <li>
+                      lösa dina matteläxor med 
+                      <strong
+                        key="strong-6-28"
+                      >
+                        JavaScript
+                      </strong>
+                    </li>
                   </ul>,
                 ]
                 <Styled(Styled(Link))
-                  to="/overview/nybörjare"
+                  to="/overview/beginner"
                 >
                   <a
                     className="sc-EHOje sc-htoDjs eWdsvx"
-                    href="/overview/nybörjare"
+                    href="/overview/beginner"
                     onClick={[Function]}
                   >
                     Kom igång
@@ -106,49 +114,17 @@ exports[`components/Start renders Start 1`] = `
               <div
                 className="sc-gzVnrw bkJYUS"
               >
-                Array [
-                  <p
-                    key="paragraph-1-1"
-                  >
-                    Har du kodat lite förrut, eller är redan klar med nybörjare? 
-          Då fortsätter du här och lär dig:
-                  </p>,
-                  <ul>
-                    <li>
-                      Testdriven utveckling (
-                      <strong
-                        key="strong-3-28"
-                      >
-                        TDD
-                      </strong>
-                      ), det rätta sättet att koda på
-                    </li>
-                    <li>
-                      <p
-                        key="paragraph-4-5"
-                      >
-                        <strong
-                          key="strong-4-5"
-                        >
-                          JavaScript
-                        </strong>
-                         (förkortas 
-                        <strong
-                          key="strong-4-31"
-                        >
-                          JS
-                        </strong>
-                        ) som används för att bygga spel, avancerade hemsidor, och annat kul
-                      </p>
-                    </li>
-                  </ul>,
-                ]
+                <p
+                  key="paragraph-1-1"
+                >
+                  Om du har kodat lite förrut så fortsätter du här.
+                </p>
                 <Styled(Styled(Link))
-                  to="/overview/fortsättning"
+                  to="/overview/intermediate"
                 >
                   <a
                     className="sc-EHOje sc-htoDjs eWdsvx"
-                    href="/overview/fortsättning"
+                    href="/overview/intermediate"
                     onClick={[Function]}
                   >
                     Kom igång

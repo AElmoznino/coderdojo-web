@@ -5,12 +5,12 @@ import styled from 'styled-components'
 import type { Match } from 'react-router-dom'
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
+import ReactMarkdown from 'react-markdown'
 import ErrorMessage from 'components/ErrorMessage/ErrorMessage'
 import GridColumn from 'components/Grid/GridColumn'
 import GridSection from 'components/Grid/GridSection'
 import H1 from 'components/Typography/H1'
 import H4 from 'components/Typography/H4'
-import LessonSection from './components/LessonSection'
 import LoadingIndicator from 'components/LoadingIndicator/LoadingIndicator'
 import NextLesson from './components/NextLesson'
 
@@ -19,25 +19,17 @@ type LessonProps = {
 }
 
 const GET_LESSON = gql`
-  query GetLesson($id: String) {
-    lesson(id: $id) {
-      lessonTitle
-      lessonShortFacts
-      lessonShortFacts
+  query GetLesson($lesson: String) {
+    lesson(where: { lessonId: $lesson }) {
+      difficultyLevel
+      lessonBody
       lessonIntro
-      level
-      objectives
+      lessonObjectives
+      lessonShortFacts
+      lessonTitle
       nextLesson {
         lessonId
-        title
-      }
-      sections {
-        sectionBody
-        sectionTitle
-        sectionImgAlt
-        sectionImgUrl
-        sectionFinishingText
-        sectionSandbox
+        lessonTitle
       }
     }
   }
@@ -54,14 +46,8 @@ const ObjectivesBox = styled.div`
   padding: ${({ theme }) => theme.sizes.medium};
 `
 
-const Objective = styled.li`
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
-`
-
 export const Lesson = ({ match }: LessonProps) => (
-  <Query query={GET_LESSON} variables={{ id: match.params.lessonId }}>
+  <Query query={GET_LESSON} variables={{ lesson: match.params.lessonId }}>
     {({ data: { lesson }, error, loading }) => {
       if (loading) return <LoadingIndicator />
       if (error) return <ErrorMessage />
@@ -79,20 +65,19 @@ export const Lesson = ({ match }: LessonProps) => (
 
               <ObjectivesBox>
                 <H4>Du kommer lära dig:</H4>
-                <ol>
-                  {lesson.objectives.map((objective, i) => (
-                    <Objective key={i}>{objective}</Objective>
-                  ))}
-                </ol>
+                <ReactMarkdown>{lesson.lessonObjectives}</ReactMarkdown>
               </ObjectivesBox>
             </TopWrap>
 
-            {lesson.sections.map((s, i) => (
-              <LessonSection key={i} {...s} />
-            ))}
+            <ReactMarkdown escapeHtml={false}>
+              {lesson.lessonBody}
+            </ReactMarkdown>
           </GridSection>
 
-          <NextLesson level={lesson.level} nextLesson={lesson.nextLesson} />
+          <NextLesson
+            difficultyLevel={lesson.difficultyLevel}
+            nextLesson={lesson.nextLesson}
+          />
         </GridColumn>
       )
     }}

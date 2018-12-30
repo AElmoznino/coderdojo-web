@@ -7,10 +7,10 @@ import ButtonLink from 'components/Button/ButtonLink'
 import H1 from 'components/Typography/H1'
 import GridSection from 'components/Grid/GridSection'
 
-type StartSectionProps = {
-  link: string,
-  text: string,
-  title: string,
+type StartDifficultyProps = {
+  difficultyDescription: string,
+  difficultyId: string,
+  difficultyName: string,
 }
 
 const InnerWrap = styled.div`
@@ -29,17 +29,23 @@ const AlignedButton = styled(ButtonLink)`
   align-self: flex-end;
 `
 
-const StartSection = ({ link, text, title }: StartSectionProps) => (
+const StartDifficulty = ({
+  difficultyDescription,
+  difficultyId,
+  difficultyName,
+}: StartDifficultyProps) => (
   <GridSection>
-    <H1>{title}</H1>
+    <H1>{difficultyName}</H1>
     <InnerWrap>
       <img alt="placeholder alt" src="https://placeimg.com/200/200/tech" />
       <RightWrap>
-        <ReactMarkdown>{text}</ReactMarkdown>
-        <AlignedButton to={link}>Kom igång</AlignedButton>
+        <ReactMarkdown>{difficultyDescription}</ReactMarkdown>
+        <AlignedButton to={`/overview/${difficultyId}`}>
+          Kom igång
+        </AlignedButton>
       </RightWrap>
     </InnerWrap>
   </GridSection>
 )
 
-export default StartSection
+export default StartDifficulty

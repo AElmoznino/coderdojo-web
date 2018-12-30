@@ -36,64 +36,60 @@ exports[`components/Lesson renders Lesson 1`] = `
                     Du kommer lära dig:
                   </h4>
                 </styled.h4>
-                <ol>
-                  <styled.li
-                    key="0"
+                Array [
+                  <p
+                    key="paragraph-1-1"
                   >
-                    <li
-                      className="sc-iwsKbI kqXDDu"
-                    >
+                    Du kommer lära dig:
+                  </p>,
+                  <ol>
+                    <li>
+                      vad HTML är och används till
+                    </li>
+                    <li>
                       strukturera upp din hemsida med HTML
                     </li>
-                  </styled.li>
-                  <styled.li
-                    key="1"
-                  >
-                    <li
-                      className="sc-iwsKbI kqXDDu"
-                    >
-                      inspektera andra hemsidor för att se hur de är uppbyggda
-                    </li>
-                  </styled.li>
-                </ol>
+                  </ol>,
+                ]
               </div>
             </styled.div>
           </div>
         </styled.div>
         Array [
-          <styled.h1>
-            <h1
-              className="sc-htpNat kpiFDp"
-            >
-              Vad är HTML
-            </h1>
-          </styled.h1>,
+          <h2>
+            Vad är HTML
+          </h2>,
           <p
-            key="paragraph-1-1"
+            key="paragraph-2-1"
           >
-            HTML står för Hypertext Markup Language. Det är instruktioner för webbläsaren hur sidan ska ritas upp i din webbläsare.
+            HTML står för Hypertext Markup Language. Det är instruktioner för webbläsaren hur sidan ska ritas upp i din webbläsare. 
           </p>,
-        ]
-        Array [
-          <styled.h1>
-            <h1
-              className="sc-htpNat kpiFDp"
-            >
-              Hur skriver man HTML
-            </h1>
-          </styled.h1>,
           <p
-            key="paragraph-1-1"
+            key="paragraph-4-1"
           >
-            HTML består av olika så kallade "taggar" som är förbestämda. En rubrik skrivs som 
-            &lt;h1&gt;
-            , 
-            &lt;h2&gt;
-             osv beroende på storlek.
+            De flesta hemsidor, även denna, har rubriker, textstycken, bilder, den s.k. navigationen högst upp. HTML instruerar webbläsaren hur den ska rita upp din hemsida.
           </p>,
-          <p>
-            Här kommer mer text
+          <p
+            key="paragraph-6-1"
+          >
+            ##Hur skriver man HTML
+HTML består av olika så kallade "taggar" som är förbestämda. Rubriker skrivs som  osv beroende på storlek. 
+Om du vill skriva en rubrik, så måste du tänka på att själva rubriken ska vara 
+            <em
+              key="emphasis-8-80"
+            >
+              innanför
+            </em>
+             taggarna, såhär: 
+I rutan nedan kan du se exempel på hur HTML-kod skrivs (till vänster), och hur det då kommer se ut (till höger).
           </p>,
+          <span
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<iframe src=\\"https://codesandbox.io/embed/v3qpwx7063?fontsize=12&hidenavigation=1\\" style=\\"width:100%; height:500px; overflow:hidden;\\" sandbox=\\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\\"></iframe>",
+              }
+            }
+          />,
         ]
       </div>
     </styled.div>

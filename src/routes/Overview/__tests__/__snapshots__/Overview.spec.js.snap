@@ -14,158 +14,147 @@ exports[`components/Overview renders Overview 1`] = `
             className="sc-htpNat kpiFDp"
           >
             Översikt av 
-            nybörjare
+            Nybörjare
           </h1>
         </styled.h1>
         <p
           key="paragraph-1-1"
         >
-          Har du aldrig kodat förrut? Då börjar du här och får en
-                introduktion till hur man strukturerar upp hemsidor med 
+          Välj ett spår nedan. Du kan göra dem i vilken ordning du vill. Med 
           <strong
-            key="strong-2-73"
+            key="strong-1-68"
           >
             HTML
           </strong>
-           och
-                snyggar till dem med 
+           kan du bygga enklare hemsidor. 
           <strong
-            key="strong-3-38"
+            key="strong-1-108"
           >
-            CSS
+            JavaScript
           </strong>
-          .
+           hjälper dig att göra dem interaktiva.
         </p>
-        <styled.div>
+        <styled.div
+          key="html-beginner"
+        >
           <div
-            className="sc-htoDjs iAmKHR"
+            className="sc-dnqmqq cxqaCR"
           >
+            <styled.h2>
+              <h2
+                className="sc-ifAKCX klzJTC"
+              >
+                HTML för nybörjare
+              </h2>
+            </styled.h2>
+            <p
+              key="paragraph-1-1"
+            >
+              <strong
+                key="strong-1-1"
+              >
+                HTML
+              </strong>
+               används för att strukturera upp dina hemsidor med rubriker, texter, bilder osv. I denna mini-kurs får du lära dig grunderna i HTML.
+            </p>
             <styled.div>
               <div
-                className="sc-gzVnrw gINtiU"
+                className="sc-iwsKbI ldduZE"
               >
-                <styled.h4>
-                  <h4
-                    className="sc-bZQynM FsPVD"
+                <styled.div>
+                  <div
+                    className="sc-htoDjs dKfutL"
                   >
-                    Lektion 
-                    1
-                  </h4>
-                </styled.h4>
-                <img
-                  alt="HTML för nybörjare, del 1"
-                  src="https://placeimg.com/180/180/tech"
-                />
-                <p>
-                  Här får du lära dig grunderna i HTML
-                </p>
-                <Styled(Link)
-                  to="/lesson/nybörjare-1"
-                >
-                  <a
-                    className="sc-EHOje fwWOIl"
-                    href="/lesson/nybörjare-1"
-                    onClick={[Function]}
-                  >
-                    Kom igång
-                  </a>
-                </Styled(Link)>
+                    <styled.h4>
+                      <h4
+                        className="sc-gzVnrw cGhHRu"
+                      >
+                        Lektion 
+                        1
+                      </h4>
+                    </styled.h4>
+                    <img
+                      alt="HTML del 1"
+                      src="https://placeimg.com/180/180/tech"
+                    />
+                    <p>
+                      Lär dig vad HTML används till och hur du strukturerar upp hemsidor med det.
+                    </p>
+                    <Styled(Link)
+                      to="/lesson/html-beginner-1"
+                    >
+                      <a
+                        className="sc-bZQynM LpvqH"
+                        href="/lesson/html-beginner-1"
+                        onClick={[Function]}
+                      >
+                        Kom igång
+                      </a>
+                    </Styled(Link)>
+                  </div>
+                </styled.div>
               </div>
             </styled.div>
+          </div>
+        </styled.div>
+        <styled.div
+          key="tdd-beginner"
+        >
+          <div
+            className="sc-dnqmqq cxqaCR"
+          >
+            <styled.h2>
+              <h2
+                className="sc-ifAKCX klzJTC"
+              >
+                Testdriven utveckling i JavaScript
+              </h2>
+            </styled.h2>
+            <p
+              key="paragraph-1-1"
+            >
+              Testdriven utveckling (kallas 
+              <strong
+                key="strong-1-31"
+              >
+                TDD
+              </strong>
+              ) är det rätta sättet att koda när man har mycket logik. Har du aldrig skrivit JavaScript förrut så fortsätter du här. 
+            </p>
             <styled.div>
               <div
-                className="sc-gzVnrw gINtiU"
+                className="sc-iwsKbI ldduZE"
               >
-                <styled.h4>
-                  <h4
-                    className="sc-bZQynM FsPVD"
+                <styled.div>
+                  <div
+                    className="sc-htoDjs dKfutL"
                   >
-                    Lektion 
-                    2
-                  </h4>
-                </styled.h4>
-                <img
-                  alt="HTML för nybörjare, del 2"
-                  src="https://placeimg.com/180/180/tech"
-                />
-                <p>
-                  Här får du lära dig mer om HTML
-                </p>
-                <Styled(Link)
-                  to="/lesson/nybörjare-2"
-                >
-                  <a
-                    className="sc-EHOje fwWOIl"
-                    href="/lesson/nybörjare-2"
-                    onClick={[Function]}
-                  >
-                    Kom igång
-                  </a>
-                </Styled(Link)>
-              </div>
-            </styled.div>
-            <styled.div>
-              <div
-                className="sc-gzVnrw gINtiU"
-              >
-                <styled.h4>
-                  <h4
-                    className="sc-bZQynM FsPVD"
-                  >
-                    Lektion 
-                    3
-                  </h4>
-                </styled.h4>
-                <img
-                  alt="CSS för nybörjare"
-                  src="https://placeimg.com/180/180/tech"
-                />
-                <p>
-                  Här får du lära dig grunderna i CSS
-                </p>
-                <Styled(Link)
-                  to="/lesson/nybörjare-3"
-                >
-                  <a
-                    className="sc-EHOje fwWOIl"
-                    href="/lesson/nybörjare-3"
-                    onClick={[Function]}
-                  >
-                    Kom igång
-                  </a>
-                </Styled(Link)>
-              </div>
-            </styled.div>
-            <styled.div>
-              <div
-                className="sc-gzVnrw gINtiU"
-              >
-                <styled.h4>
-                  <h4
-                    className="sc-bZQynM FsPVD"
-                  >
-                    Lektion 
-                    4
-                  </h4>
-                </styled.h4>
-                <img
-                  alt="CSS för nybörjare"
-                  src="https://placeimg.com/180/180/tech"
-                />
-                <p>
-                  Här får du lära dig mer om CSS
-                </p>
-                <Styled(Link)
-                  to="/lesson/nybörjare-4"
-                >
-                  <a
-                    className="sc-EHOje fwWOIl"
-                    href="/lesson/nybörjare-4"
-                    onClick={[Function]}
-                  >
-                    Kom igång
-                  </a>
-                </Styled(Link)>
+                    <styled.h4>
+                      <h4
+                        className="sc-gzVnrw cGhHRu"
+                      >
+                        Lektion 
+                        1
+                      </h4>
+                    </styled.h4>
+                    <img
+                      alt="Introduktion till TDD"
+                      src="https://placeimg.com/180/180/tech"
+                    />
+                    <p />
+                    <Styled(Link)
+                      to="/lesson/tdd-beginner-1"
+                    >
+                      <a
+                        className="sc-bZQynM LpvqH"
+                        href="/lesson/tdd-beginner-1"
+                        onClick={[Function]}
+                      >
+                        Kom igång
+                      </a>
+                    </Styled(Link)>
+                  </div>
+                </styled.div>
               </div>
             </styled.div>
           </div>

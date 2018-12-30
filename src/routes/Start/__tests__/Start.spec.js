@@ -12,20 +12,23 @@ describe('components/Start', () => {
 
   beforeEach(() => {
     mockedResponse = {
-      levels: [
+      difficulties: [
         {
-          __typename: 'Level',
-          link: '/overview/nybörjare',
-          title: 'Nybörjare',
-          text:
-            'Har du inte kodat förrut? Då börjar du här. Lär dig:\n  * strukturera upp hemsidor med **HTML**\n  * snygga till din hemsida med **CSS**\n  * bygga din första hemsida, ett Pokédex',
+          __typename: 'Difficulty',
+          difficultyDescription:
+            'Har du inte kodat förrut? Då börjar du här. Lär dig:\n\n- strukturera upp hemsidor med **HTML**\n- snygga till din hemsida med **CSS**\n- bygga din första hemsida, ett Pokédex\n- lösa dina matteläxor med **JavaScript**',
+          difficultyId: 'beginner',
+          difficultyName: 'Nybörjare',
+          difficultyOverviewDescription:
+            'Välj ett spår nedan. Du kan göra dem i vilken ordning du vill. Med **HTML** kan du bygga enklare hemsidor. **JavaScript** hjälper dig att göra dem interaktiva.',
         },
         {
-          __typename: 'Level',
-          link: '/overview/fortsättning',
-          title: 'Fortsättning',
-          text:
-            'Har du kodat lite förrut, eller är redan klar med nybörjare? \n          Då fortsätter du här och lär dig:\n  * Testdriven utveckling (**TDD**), det rätta sättet att koda på\n  * **JavaScript** (förkortas **JS**) som används för att bygga spel, avancerade hemsidor, och annat kul\n  ',
+          __typename: 'Difficulty',
+          difficultyDescription:
+            'Om du har kodat lite förrut så fortsätter du här.',
+          difficultyId: 'intermediate',
+          difficultyName: 'Fortsättning',
+          difficultyOverviewDescription: null,
         },
       ],
     }

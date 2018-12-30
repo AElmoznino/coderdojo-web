@@ -10,12 +10,23 @@ import ErrorMessage from 'components/ErrorMessage/ErrorMessage'
 import GridColumn from 'components/Grid/GridColumn'
 import GridSection from 'components/Grid/GridSection'
 import H1 from 'components/Typography/H1'
+import H2 from 'components/Typography/H2'
 import LoadingIndicator from 'components/LoadingIndicator/LoadingIndicator'
 import OverviewLesson from './OverviewLesson'
 
 type OverviewProps = {
   match: Match,
 }
+
+const CourseWrap = styled.div`
+  background-color: ${({ theme }) => theme.colors.white};
+  box-shadow: 0 0 ${({ theme }) => theme.sizes.medium} rgba(67, 73, 89, 0.1);
+  padding: ${({ theme }) => theme.sizes.third};
+
+  &:not(:last-child) {
+    margin-bottom: ${({ theme }) => theme.sizes.base};
+  }
+`
 
 const LessonsWrap = styled.div`
   display: grid;
@@ -25,16 +36,20 @@ const LessonsWrap = styled.div`
 
 const GET_OVERVIEW = gql`
   query getOverview($level: String) {
-    overview(level: $level) {
-      description
-      lessons {
-        lessonId
-        image {
-          alt
-          url
+    difficulty(where: { difficultyId: $level }) {
+      difficultyName
+      difficultyId
+      difficultyOverviewDescription
+      difficultyDescription
+      courses {
+        courseDescription
+        courseId
+        courseName
+        lessons {
+          lessonId
+          lessonShortFacts
+          lessonTitle
         }
-        text
-        title
       }
     }
   }
@@ -43,25 +58,33 @@ const GET_OVERVIEW = gql`
 const Overview = ({ match }: OverviewProps) => {
   return (
     <Query query={GET_OVERVIEW} variables={{ level: match.params.level }}>
-      {({ data: { overview }, error, loading }) => {
+      {({ data: { difficulty }, error, loading }) => {
         if (loading) return <LoadingIndicator />
         if (error) return <ErrorMessage />
-        if (!overview) return null
+        if (!difficulty) return null
 
         return (
           <GridColumn>
             <GridSection>
-              <H1>Översikt av {match.params.level}</H1>
-              <ReactMarkdown>{overview.description}</ReactMarkdown>
-              <LessonsWrap>
-                {overview.lessons.map((lesson, i) => (
-                  <OverviewLesson
-                    key={lesson.lessonId}
-                    lessonNumber={i + 1}
-                    {...lesson}
-                  />
-                ))}
-              </LessonsWrap>
+              <H1>Översikt av {difficulty.difficultyName}</H1>
+              <ReactMarkdown>
+                {difficulty.difficultyOverviewDescription}
+              </ReactMarkdown>
+              {difficulty.courses.map(course => (
+                <CourseWrap key={course.courseId}>
+                  <H2>{course.courseName}</H2>
+                  <ReactMarkdown>{course.courseDescription}</ReactMarkdown>
+                  <LessonsWrap>
+                    {course.lessons.map((lesson, i) => (
+                      <OverviewLesson
+                        key={lesson.lessonId}
+                        lessonNumber={i + 1}
+                        {...lesson}
+                      />
+                    ))}
+                  </LessonsWrap>
+                </CourseWrap>
+              ))}
             </GridSection>
           </GridColumn>
         )

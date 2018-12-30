@@ -8,10 +8,10 @@ describe('components/OverviewLesson', () => {
   beforeEach(() => {
     component = shallow(
       <OverviewLesson
-        image={{ alt: 'testAlt', url: 'testUrl' }}
         lessonId="nybörjare-1"
         lessonNumber={1}
-        text="testText"
+        lessonShortFacts="This lesson is about something"
+        lessonTitle="testText"
       />,
     )
   })

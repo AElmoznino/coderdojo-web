@@ -6,10 +6,10 @@ import GridSection from 'components/Grid/GridSection'
 import ButtonLink from 'components/Button/ButtonLink'
 
 type NextLessonProps = {
-  level: string,
+  difficultyLevel: string,
   nextLesson?: {
     lessonId: string,
-    title: string,
+    lessonTitle: string,
   },
 }
 
@@ -19,20 +19,20 @@ const Wrap = styled.div`
   justify-content: space-between;
 `
 
-const NextLesson = ({ level, nextLesson }: NextLessonProps) => (
+const NextLesson = ({ difficultyLevel, nextLesson }: NextLessonProps) => (
   <GridSection>
     <Wrap>
       {nextLesson ? (
         <>
-          <strong>Nästa lektion: {nextLesson.title}</strong>
+          <strong>Nästa lektion: {nextLesson.lessonTitle}</strong>
           <ButtonLink to={`/lesson/${nextLesson.lessonId}`}>
             Fortsätt &gt;
           </ButtonLink>
         </>
       ) : (
         <>
-          Bra jobbat, du är färdig! Tillbaka till översiktssidan för {level}
-          <ButtonLink to={`/overview/${level}`}>Tillbaka</ButtonLink>
+          Bra jobbat, du är färdig! Tillbaka till översiktssidan
+          <ButtonLink to={`/overview/${difficultyLevel}`}>Tillbaka</ButtonLink>
         </>
       )}
     </Wrap>

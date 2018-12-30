@@ -6,18 +6,14 @@ import ButtonLink from 'components/Button/ButtonLink'
 import H4 from 'components/Typography/H4'
 
 type OverviewLessonProps = {
-  image: {
-    alt: string,
-    url: string,
-  },
   lessonId: number,
   lessonNumber: number,
-  text: string,
+  lessonShortFacts: string,
+  lessonTitle: string,
 }
 
 const Wrap = styled.div`
-  background-color: ${({ theme }) => theme.colors.white};
-  box-shadow: 0 0 ${({ theme }) => theme.sizes.medium} rgba(67, 73, 89, 0.1);
+  background-color: ${({ theme }) => theme.colors.wildSand};
   padding: ${({
     theme: {
       sizes: { medium, third },
@@ -28,13 +24,13 @@ const Wrap = styled.div`
 export const OverviewLesson = ({
   lessonId,
   lessonNumber,
-  image,
-  text,
+  lessonShortFacts,
+  lessonTitle,
 }: OverviewLessonProps) => (
   <Wrap>
     <H4>Lektion {lessonNumber}</H4>
-    <img alt={image.alt} src={image.url} />
-    <p>{text}</p>
+    <img alt={lessonTitle} src="https://placeimg.com/180/180/tech" />
+    <p>{lessonShortFacts}</p>
     <ButtonLink to={`/lesson/${lessonId}`}>Kom igång</ButtonLink>
   </Wrap>
 )

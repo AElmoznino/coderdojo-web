@@ -3,8 +3,7 @@
 exports[`components/NextLesson renders NextLesson when there is no next lesson 1`] = `
 <styled.div>
   <styled.div>
-    Bra jobbat, du är färdig! Tillbaka till översiktssidan för 
-    nybörjare
+    Bra jobbat, du är färdig! Tillbaka till översiktssidan
     <Styled(Link)
       to="/overview/nybörjare"
     >

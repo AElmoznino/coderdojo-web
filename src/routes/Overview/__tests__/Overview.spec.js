@@ -19,54 +19,45 @@ describe('components/Overview', () => {
     }
 
     mockedResponse = {
-      overview: {
-        __typename: 'Overview',
-        description:
-          'Har du aldrig kodat förrut? Då börjar du här och får en\n                introduktion till hur man strukturerar upp hemsidor med **HTML** och\n                snyggar till dem med **CSS**.',
-        lessons: [
+      difficulty: {
+        __typename: 'Difficulty',
+        difficultyName: 'Nybörjare',
+        difficultyId: 'beginner',
+        difficultyOverviewDescription:
+          'Välj ett spår nedan. Du kan göra dem i vilken ordning du vill. Med **HTML** kan du bygga enklare hemsidor. **JavaScript** hjälper dig att göra dem interaktiva.',
+        difficultyDescription:
+          'Har du inte kodat förrut? Då börjar du här. Lär dig:\n\n- strukturera upp hemsidor med **HTML**\n- snygga till din hemsida med **CSS**\n- bygga din första hemsida, ett Pokédex\n- lösa dina matteläxor med **JavaScript**',
+        courses: [
           {
-            __typename: 'LessonOverview',
-            lessonId: 'nybörjare-1',
-            image: {
-              __typename: 'Image',
-              alt: 'HTML för nybörjare, del 1',
-              url: 'https://placeimg.com/180/180/tech',
-            },
-            text: 'Här får du lära dig grunderna i HTML',
-            title: 'HTML del 1',
+            __typename: 'Course',
+            courseDescription:
+              '**HTML** används för att strukturera upp dina hemsidor med rubriker, texter, bilder osv. I denna mini-kurs får du lära dig grunderna i HTML.',
+            courseId: 'html-beginner',
+            courseName: 'HTML för nybörjare',
+            lessons: [
+              {
+                __typename: 'Lesson',
+                lessonId: 'html-beginner-1',
+                lessonShortFacts:
+                  'Lär dig vad HTML används till och hur du strukturerar upp hemsidor med det.',
+                lessonTitle: 'HTML del 1',
+              },
+            ],
           },
           {
-            __typename: 'LessonOverview',
-            lessonId: 'nybörjare-2',
-            image: {
-              __typename: 'Image',
-              alt: 'HTML för nybörjare, del 2',
-              url: 'https://placeimg.com/180/180/tech',
-            },
-            text: 'Här får du lära dig mer om HTML',
-            title: 'HTML del 2',
-          },
-          {
-            __typename: 'LessonOverview',
-            lessonId: 'nybörjare-3',
-            image: {
-              __typename: 'Image',
-              alt: 'CSS för nybörjare',
-              url: 'https://placeimg.com/180/180/tech',
-            },
-            text: 'Här får du lära dig grunderna i CSS',
-            title: 'CSS del 1',
-          },
-          {
-            __typename: 'LessonOverview',
-            lessonId: 'nybörjare-4',
-            image: {
-              __typename: 'Image',
-              alt: 'CSS för nybörjare',
-              url: 'https://placeimg.com/180/180/tech',
-            },
-            text: 'Här får du lära dig mer om CSS',
-            title: 'CSS del 2',
+            __typename: 'Course',
+            courseDescription:
+              'Testdriven utveckling (kallas **TDD**) är det rätta sättet att koda när man har mycket logik. Har du aldrig skrivit JavaScript förrut så fortsätter du här. ',
+            courseId: 'tdd-beginner',
+            courseName: 'Testdriven utveckling i JavaScript',
+            lessons: [
+              {
+                __typename: 'Lesson',
+                lessonId: 'tdd-beginner-1',
+                lessonShortFacts: null,
+                lessonTitle: 'Introduktion till TDD',
+              },
+            ],
           },
         ],
       },

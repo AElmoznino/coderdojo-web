@@ -7,11 +7,11 @@ exports[`components/OverviewLesson renders OverviewLesson 1`] = `
     1
   </styled.h4>
   <img
-    alt="testAlt"
-    src="testUrl"
+    alt="testText"
+    src="https://placeimg.com/180/180/tech"
   />
   <p>
-    testText
+    This lesson is about something
   </p>
   <Styled(Link)
     to="/lesson/nybörjare-1"

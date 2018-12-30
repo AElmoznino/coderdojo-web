@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/StartSection renders StartSection 1`] = `
+exports[`components/StartDifficulty renders StartDifficulty 1`] = `
 <styled.div>
   <styled.h1>
     testTitle
@@ -24,7 +24,7 @@ exports[`components/StartSection renders StartSection 1`] = `
         testText
       </ReactMarkdown>
       <Styled(Styled(Link))
-        to="testLink"
+        to="/overview/testLink"
       >
         Kom igång
       </Styled(Styled(Link))>

@@ -6,7 +6,7 @@ describe('components/NextLesson', () => {
   let component
 
   beforeEach(() => {
-    component = shallow(<NextLesson level="nybörjare" />)
+    component = shallow(<NextLesson difficultyLevel="nybörjare" />)
   })
 
   it('renders NextLesson when there is no next lesson', () => {
@@ -17,7 +17,7 @@ describe('components/NextLesson', () => {
     component.setProps({
       nextLesson: {
         lessonId: 'test-id',
-        title: 'test-title',
+        lessonTitle: 'test-title',
       },
     })
 
