@@ -25,13 +25,13 @@ exports[`components/Navigation renders Navigation 1`] = `
       </Link>
       <Link
         replace={false}
-        to="/overview/nybörjare"
+        to="/overview/beginner"
       >
         Nybörjare
       </Link>
       <Link
         replace={false}
-        to="/overview/fortsättning"
+        to="/overview/intermediate"
       >
         Fortsättning
       </Link>
