@@ -14,7 +14,10 @@ import Overview from 'routes/Overview/Overview'
 import Start from 'routes/Start/Start'
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000',
+  uri: process.env.REACT_APP_GRAPHCMS_ENDPOINT,
+  headers: {
+    Authorization: process.env.REACT_APP_GRAPHCMS_TOKEN,
+  },
 })
 
 const App = () => (

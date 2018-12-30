@@ -36,7 +36,7 @@ const MockedProviders = ({
   })
 
   const client = new ApolloClient({
-    uri: 'http://localhost:4000',
+    uri: process.env.REACT_APP_GRAPHCMS_ENDPOINT,
     fetch: mockedNetworkFetch,
   })
 
