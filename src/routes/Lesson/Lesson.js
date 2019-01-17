@@ -31,6 +31,7 @@ const GET_LESSON = gql`
         lessonId
         lessonTitle
       }
+      references
     }
   }
 `
@@ -41,7 +42,7 @@ const TopWrap = styled.div`
   grid-column-gap: 20px;
 `
 
-const ObjectivesBox = styled.div`
+const Box = styled.div`
   background-color: ${({ theme }) => theme.colors.downy};
   padding: ${({ theme }) => theme.sizes.medium};
 `
@@ -54,24 +55,32 @@ export const Lesson = ({ match }: LessonProps) => (
       if (!lesson) return null
 
       return (
-        <GridColumn>
+        <GridColumn wide>
           <GridSection>
             <TopWrap>
               <div>
                 <H1>{lesson.lessonTitle}</H1>
                 {lesson.lessonShortFacts && <p>{lesson.lessonShortFacts}</p>}
-                <p>{lesson.lessonIntro}</p>
+                <ReactMarkdown>{lesson.lessonIntro}</ReactMarkdown>
               </div>
 
-              <ObjectivesBox>
+              <Box>
                 <H4>Du kommer lära dig:</H4>
                 <ReactMarkdown>{lesson.lessonObjectives}</ReactMarkdown>
-              </ObjectivesBox>
+              </Box>
             </TopWrap>
 
             <ReactMarkdown escapeHtml={false}>
               {lesson.lessonBody}
             </ReactMarkdown>
+
+            {lesson.references && (
+              <Box>
+                <ReactMarkdown escapeHtml={false}>
+                  {lesson.references}
+                </ReactMarkdown>
+              </Box>
+            )}
           </GridSection>
 
           <NextLesson

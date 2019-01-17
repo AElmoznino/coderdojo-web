@@ -35,6 +35,8 @@ describe('components/Lesson', () => {
           lessonId: 'nybörjare-2',
           lessonTitle: 'HTML del 2',
         },
+        references:
+          '## Fördjupning\n- Lär dig mer om JavaScripts tre typer av variabler **var**, **let** och **const** med denna video (på engelska):\n<iframe width="560" height="315" src="https://www.youtube.com/embed/sjyJBL5fkp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n\n- Läs mer om matematik i JavaScript på [Mozillas hemsida (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators).',
       },
     }
 

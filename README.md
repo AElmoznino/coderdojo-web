@@ -11,7 +11,6 @@ Create `.env.local` in the root (see `.env.local.template` for guidance). Get th
 ```zsh
 $ nvm use
 $ npm install
-$ npm run server // in one terminal tab to start mock API
 $ npm start // in another terminal tab to start frontend
 ```
 
@@ -23,7 +22,6 @@ $ npm start // in another terminal tab to start frontend
 | `build`            | Builds a production bundle of the app                                    |
 | `test:dev`         | Run Jest in watch mode                                                   |
 | `flow`             | Run Flow type checking                                                   |
-| `server`           | Starts the mock GraphQL server at `localhost:4000`                       |
 
 ## TODOs:
 
@@ -32,6 +30,8 @@ $ npm start // in another terminal tab to start frontend
 - [x] Bold important words on Start page
 - [x] Swap long texts for bullet points on the Start page (the ones called `text` in `StartSection.js`).
 - [x] Swap out MockServer for GraphCMS
+- [ ] Enable stage enivornment (use an env variable to see if entries with status DRAFT or PUBLISHED should be retrieved)
+- [ ] Add Error Boundary, in case page fails to load, make it fail gracefully
 - [ ] Create content and sandboxes for all lessons
 - [ ] Add lazy-loading on `Lesson.js`
 - [ ] Add short quiz/test on end of each lesson, or after completing an entire section

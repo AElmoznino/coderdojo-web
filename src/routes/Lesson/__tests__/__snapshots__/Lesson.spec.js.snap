@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Lesson renders Lesson 1`] = `
-<styled.div>
+<styled.div
+  wide={true}
+>
   <div
-    className="sc-bdVaJa cBlAJt"
+    className="sc-bdVaJa eeCUKs"
   >
     <styled.div>
       <div
@@ -21,7 +23,9 @@ exports[`components/Lesson renders Lesson 1`] = `
                   HTML del 1
                 </h1>
               </styled.h1>
-              <p>
+              <p
+                key="paragraph-1-1"
+              >
                 HTML används för att strukturera upp hemsidor. Alla hemsidor är byggda med det.
               </p>
             </div>
@@ -91,6 +95,65 @@ I rutan nedan kan du se exempel på hur HTML-kod skrivs (till vänster), och hur
             }
           />,
         ]
+        <styled.div>
+          <div
+            className="sc-dnqmqq dXnOWs"
+          >
+            Array [
+              <h2>
+                Fördjupning
+              </h2>,
+              <ul>
+                <li>
+                  <p
+                    key="paragraph-2-3"
+                  >
+                    Lär dig mer om JavaScripts tre typer av variabler 
+                    <strong
+                      key="strong-2-53"
+                    >
+                      var
+                    </strong>
+                    , 
+                    <strong
+                      key="strong-2-62"
+                    >
+                      let
+                    </strong>
+                     och 
+                    <strong
+                      key="strong-2-74"
+                    >
+                      const
+                    </strong>
+                     med denna video (på engelska):
+                  </p>
+                  <span
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<iframe width=\\"560\\" height=\\"315\\" src=\\"https://www.youtube.com/embed/sjyJBL5fkp8\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\\" allowfullscreen></iframe>",
+                      }
+                    }
+                  />
+                </li>
+                <li>
+                  <p
+                    key="paragraph-5-3"
+                  >
+                    Läs mer om matematik i JavaScript på 
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators"
+                      key="link-5-40"
+                    >
+                      Mozillas hemsida (MDN)
+                    </a>
+                    .
+                  </p>
+                </li>
+              </ul>,
+            ]
+          </div>
+        </styled.div>
       </div>
     </styled.div>
     <styled.div>

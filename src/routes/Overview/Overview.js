@@ -41,7 +41,7 @@ const GET_OVERVIEW = gql`
       difficultyId
       difficultyOverviewDescription
       difficultyDescription
-      courses {
+      courses(where: { status: PUBLISHED }) {
         courseDescription
         courseId
         courseName
