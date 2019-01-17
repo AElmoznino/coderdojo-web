@@ -55,7 +55,7 @@ class ChromeCheck extends React.Component<null, ChromeCheckState> {
   render() {
     const { hasBeenDismissed } = this.state
 
-    const isChrome = !!window.chrome && !!window.chrome.webstore
+    const isChrome = navigator.userAgent.indexOf('Chrome') !== -1
     if (isChrome) return null
 
     return !hasBeenDismissed ? (
