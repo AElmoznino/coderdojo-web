@@ -56,9 +56,9 @@ class ChromeCheck extends React.Component<null, ChromeCheckState> {
     const { hasBeenDismissed } = this.state
 
     const isChrome = !!window.chrome && !!window.chrome.webstore
-    const shouldRender = !isChrome && !hasBeenDismissed
+    if (isChrome) return null
 
-    return shouldRender ? (
+    return !hasBeenDismissed ? (
       <Warning>
         <GridColumn>
           <H1>
