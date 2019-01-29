@@ -46,9 +46,8 @@ export const Navigation = () => (
       </div>
       <LinksWrap>
         <Link to="/">Startsidan</Link>
-        <Link to="/overview/beginner">Nybörjare</Link>
-        <Link to="/overview/intermediate">Fortsättning</Link>
-        <Link to="/about">Om</Link>
+        <Link to="/info/references">Referenser</Link>
+        <Link to="/info/about">Om</Link>
       </LinksWrap>
     </List>
   </Wrap>
