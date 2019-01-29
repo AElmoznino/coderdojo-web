@@ -8,7 +8,7 @@ import ApolloClient from 'apollo-boost'
 import ScrollToTop from './routes/ScrollToTop'
 import Navigation from 'components/Navigation/Navigation'
 import ChromeCheck from 'components/ChromeCheck/ChromeCheck'
-import About from 'routes/About/About'
+import Info from 'routes/Info/Info'
 import Lesson from 'routes/Lesson/Lesson'
 import Overview from 'routes/Overview/Overview'
 import Start from 'routes/Start/Start'
@@ -28,7 +28,7 @@ const App = () => (
           <ScrollToTop>
             <Navigation />
             <Route path="/" exact component={Start} />
-            <Route path="/about" component={About} />
+            <Route path="/info/:pageId" component={Info} />
             <Route path="/overview/:level" component={Overview} />
             <Route path="/lesson/:lessonId" component={Lesson} />
             <ChromeCheck />
